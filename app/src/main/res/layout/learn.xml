@@ -58,7 +58,7 @@
 
 
 <TextView
-	android:id="@+id/page_exlain"    
+	android:id="@+id/page_exlain_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="SETTING REASONABLE EXPECTATIONS"
@@ -66,7 +66,7 @@
     />    
 
 <TextView
-	android:id="@+id/heading_two"    
+	android:id="@+id/heading_three"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"  
@@ -78,7 +78,7 @@
     /> 		
 
 <TextView
-	android:id="@+id/heading_three"    
+	android:id="@+id/heading_four"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="AVOID OR HOLD OFF FUNDING AS LONG AS POSSIBLE"
@@ -98,7 +98,7 @@
 
 
 <TextView
-	android:id="@+id/heading_four"    
+	android:id="@+id/heading_five"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="CHEAP WAYS TO FUND YOUR COMPANY"
@@ -118,7 +118,7 @@
 
 
 <TextView
-	android:id="@+id/heading_five"    
+	android:id="@+id/heading_six"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="SELF-FUNDING AS A FUNDING OPTION"
@@ -136,7 +136,7 @@
     />
 
 <TextView
-	android:id="@+id/heading_six"    
+	android:id="@+id/heading_six1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="FUNDING FROM YOUR OWN REVENUE"

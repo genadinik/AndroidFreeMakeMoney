@@ -55,7 +55,7 @@
     />
 
 <TextView
-	android:id="@+id/feedback_explanation"    
+	android:id="@+id/feedback_explanation_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="15dp"

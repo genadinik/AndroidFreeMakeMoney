@@ -52,7 +52,7 @@
     />
 
 <TextView
-	android:id="@+id/heading_0"    
+	android:id="@+id/heading_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_heading"   
@@ -61,7 +61,7 @@
 
 
 <TextView
-	android:id="@+id/explanation"    
+	android:id="@+id/explanation_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"    
@@ -72,7 +72,7 @@
 \n4) Fundraising"/>
 
 <TextView
-	android:id="@+id/heading_0"    
+	android:id="@+id/heading_2"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_heading"   
@@ -80,7 +80,7 @@
     />
 
 <TextView
-	android:id="@+id/explanation_0"    
+	android:id="@+id/explanation_2"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"  
@@ -131,7 +131,7 @@
     />
 
 <TextView
-	android:id="@+id/explanation1"    
+	android:id="@+id/explanation4"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"    
@@ -148,7 +148,7 @@
     />
 
 <TextView
-	android:id="@+id/target_users_heading"    
+	android:id="@+id/target_users_heading_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_heading"   

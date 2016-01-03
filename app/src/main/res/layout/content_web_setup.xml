@@ -55,7 +55,7 @@
 	/>
 
 <TextView
-	android:id="@+id/web_setup_heading"    
+	android:id="@+id/web_setup_heading_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -74,7 +74,7 @@
  -->
         
 <TextView
-	android:id="@+id/domain_heading"    
+	android:id="@+id/domain_heading_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp" 
@@ -83,7 +83,7 @@
 	/>
 
 <TextView
-	android:id="@+id/web_setup_heading"    
+	android:id="@+id/web_setup_heading_2"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -103,7 +103,7 @@ and very cheaply (sometimes even free).
 
  
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_3"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp" 
@@ -113,7 +113,7 @@ and very cheaply (sometimes even free).
      
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_4"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -167,7 +167,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
     />
  -->
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_5"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
 	android:text="TO CREATE PAGES, INSTALL WORDPRESS ON YOUR HOSTING"
@@ -195,7 +195,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
     />
 
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_6"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
 	android:text="LAST STEP: DESIGN"
@@ -204,7 +204,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_7"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -217,7 +217,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
         
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_8"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -235,7 +235,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 
 
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_9"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
 	android:text="HELP AND TROUBLESHOOTING"
@@ -243,7 +243,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 	/>
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_10"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -257,7 +257,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
     />
 
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_111"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
 	android:text="CONGRATULATIONS! YOUR SITE IS READY FOR BUSINESS"
@@ -265,7 +265,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 	/>
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_12"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"
@@ -288,7 +288,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 
 
 <TextView
-	android:id="@+id/web_setup_heading_1"    
+	android:id="@+id/web_setup_heading_13"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
 	android:text="ONCE YOUR SITE IS LIVE, YOU ARE READY TO PROMOTE IT"
@@ -296,7 +296,7 @@ A reputable and professional hosting company is BlueHost. They also have very go
 	/>
 
 <TextView
-	android:id="@+id/web_setup_text_1"    
+	android:id="@+id/web_setup_text_14"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop ="5dp"

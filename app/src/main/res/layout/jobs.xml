@@ -61,7 +61,7 @@
 	 -->
 	 
 <TextView
-	android:id="@+id/heading_1"    
+	android:id="@+id/heading_2"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="GET A JOBS APP"
@@ -70,7 +70,7 @@
 
 
 <TextView
-	android:id="@+id/fundamentals_description"    
+	android:id="@+id/fundamentals_description_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"  
