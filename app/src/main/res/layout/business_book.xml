@@ -42,7 +42,7 @@
 
 
 <TextView
-	android:id="@+id/page_exlain"    
+	android:id="@+id/page_exlain_two"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="And the print version of the book is available on Amazon.com"
