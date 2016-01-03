@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+       
+
+    
+<!-- 
+    <Button
+	android:id="@+id/help_instructions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Instructions If Requesting Advice"
+    style="@style/home_page_buttons"
+    />  
+    -->
+<!-- 
+    <Button
+	android:id="@+id/business_instructions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="$1.99 Live Help (Instructions)"
+    style="@style/home_page_buttons"
+    />    
+ -->
+    
+<TextView
+	android:id="@+id/prompt_to_expain_biz"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Brief explanation of your business"
+    />          
+  
+		<EditText  
+		    android:id="@+id/problem_explanation"  
+		    android:layout_height="wrap_content"  
+		    android:inputType="textMultiLine"  
+		    android:lines="5"  
+		    android:layout_width="fill_parent">  
+		</EditText>
+		<!-- 
+				<Button  
+		    android:id="@+id/button_help_expectation"  
+		    android:layout_height="wrap_content"  
+		    android:text="What to expect with the help option"  
+		    android:textColor="@color/light_best_blue"
+		    android:layout_width="fill_parent">  
+		</Button> 	
+		  -->
+    <RadioGroup
+        android:id="@+id/radioPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want help planning" 
+             />
+ 
+        <RadioButton
+            android:id="@+id/radioPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan privately, on my own" />
+ 
+    </RadioGroup>		
+		
+		
+		<!-- 
+<TextView
+	android:id="@+id/name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your name: "
+    />	
+	    
+<EditText
+	android:id="@+id/name"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />   
+	
+<TextView
+	android:id="@+id/email_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your email:"
+    />	
+	    
+<EditText
+	android:id="@+id/email"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />   		
+		-->
+		
+		
+<TextView
+	android:id="@+id/premium_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="We provide planning help and answer unlimited questions on our premium business plan app."
+    />	
+		
+    <Button
+	android:id="@+id/premium_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="10dp"    
+    android:text="$1.99 Get Premium App"
+    style="@style/home_page_buttons"
+    />		
+		
+<TextView
+	android:id="@+id/error_message" 
+	android:textColor="@color/red" 
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Error: the email is already used in a another account. Please go to the home screen --> settings, and log into that account, or reset your password. "
+    />			
+		
+
+		<Button  
+		    android:id="@+id/button_send_feedback"  
+		    android:layout_height="wrap_content"  
+		    android:text="Submit"  
+		    android:onClick="sendFeedback"
+		    android:layout_width="fill_parent">  
+		</Button> 					
+<!-- 		    style="@style/home_page_buttons" 
+ -->
+				
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/add_problem_validation_error"
+    />
+				
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+    
+	

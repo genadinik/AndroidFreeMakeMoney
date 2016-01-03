@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >    
+    
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>    
+          
+		<Button  
+		    android:id="@+id/add_question"  
+		    android:layout_height="wrap_content"  
+    		android:text="Ask a Question"
+    		android:textColor="@color/light_best_blue" 
+    		android:layout_marginTop ="5dp"
+    		android:layout_width="fill_parent" 
+    		/>  
+    		    
+<TextView
+	android:id="@+id/question_label"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px"
+    android:text="Loading your questions..."
+    />     
+
+    <ListView
+	android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="19sp" >        
+    </ListView>
+ 
+   
+		
+
+	 	
+		<!--  android:onClick="sendFeedback" -->
+
+</LinearLayout>

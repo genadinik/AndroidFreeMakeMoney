@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+    
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+      
+<TextView
+	android:id="@+id/name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your Name:"
+    />          
+
+		<EditText  
+		    android:id="@+id/name"  
+		    android:layout_height="wrap_content"  
+		    android:inputType="textMultiLine"  
+		    android:layout_width="fill_parent">  
+		</EditText>
+
+<TextView
+	android:id="@+id/email_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your Email:"
+    />      
+    
+    
+		<EditText  
+		    android:id="@+id/email"  
+		    android:layout_height="wrap_content"  
+		    android:inputType="textMultiLine"  
+		    android:layout_width="fill_parent">  
+		</EditText>
+		
+<TextView
+	android:id="@+id/password_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter your password"
+    
+    /> 
+
+<EditText
+	android:id="@+id/pass1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:inputType="textPassword" 
+    /> 
+
+<TextView
+	android:id="@+id/password_confirm_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirm your password"
+    /> 
+    
+<EditText
+	android:id="@+id/pass2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:inputType="textPassword" 
+    /> 
+				
+       
+       <Button
+	android:id="@+id/submit"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:layout_marginTop ="15dp" 
+    android:textColor="@color/light_best_blue"
+    />
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop ="10dp"
+    android:background="@color/dark_stail_gray"/>
+
+<Button
+	android:id="@+id/settings"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Back To Settings"
+        android:layout_marginTop ="10dp"    
+    android:textColor="@color/light_best_blue"
+    />
+
+    <Button
+	android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Home"
+    android:textColor="@color/light_best_blue"
+    />
+       
+</LinearLayout>
+
+</ScrollView>
+    
+</LinearLayout>

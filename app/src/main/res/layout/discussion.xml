@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >    
+    
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>        
+
+    <Button
+	android:id="@+id/topic_learn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/light_best_blue"
+    android:layout_marginTop ="5dp" 
+    android:text=""
+    /> 
+
+<TextView
+    android:id="@+id/discussion_message"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip" 
+    android:layout_marginRight="10dip"
+    android:text="Current discussion comments:" />    
+
+<EditText
+	android:id="@+id/discussion_comment"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:singleLine="false" android:lines="4"
+    android:layout_marginLeft="10dip" 
+    android:layout_marginRight="10dip"
+    android:text=""
+    />    
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+>
+
+    <Button
+	android:id="@+id/submit_comment"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="12dp"
+    android:textColor="@color/light_best_blue"
+    android:text="Submit"
+    />    
+
+    <Button
+	android:id="@+id/back"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/light_best_blue"
+    android:text="Back To Plan"
+    android:layout_toRightOf="@+id/submit_comment"
+    />        
+</LinearLayout>
+
+ 
+<TextView
+    android:id="@+id/topic_instructions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip" 
+    android:layout_marginRight="10dip"
+    android:text="Instructions: if getting help, each plan section can be used as chat. Comments appear below." /> 
+ 
+ 
+    <ListView
+	android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20px" >        
+    </ListView>
+
+</LinearLayout>

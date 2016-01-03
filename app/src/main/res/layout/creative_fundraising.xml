@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="CREATIVE WAYS TO RAISE MONEY"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Raising money is almost always a very difficult and drawn out process.  More often than not, it ends in failure. This article goes over some ways to think about the fundraising process, and possibly combine some fundraising techniques to get you to your fundraising goal."       
+    />
+
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="RAISING MONEY FROM MULTIPLE SOURCES"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="A business can raise money from its own revenues, donations, personal savings of the founders, loans from banks or friends or family, investment from professional investors or friends and family, donations, or grants.  When raising money, you can try to leverage as many of the options as possible as long as you are well aware of your options."       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="MONEY FROM REVENUE"
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Being able to fund your business from your own revenue is one of the best ways to fund your company because pound for pound, it is the most sustainable way to fund your company.  So if there is any way you can start to do that, that is great."       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="MONEY FROM DONATIONS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There are different types of donations. Sometimes a family member or a friend can simply give you money. Other times you can hold fundraisers or events where you ask for donations.  There is also crowdfunding which is a new way to raise donations online.
+    
+\n\nWhen it comes to donations, in nearly all cases, the key is to find the groups of people is thinking about the groups of people who would be passionate about your cause.  Those groups are not only the best candidates to help you raise donations, but they can help you in many other aspects of your business, so it is a great idea to form relationships with them if you can.
+
+\n\nAlso, on this app is a full article on just raising money via crowdfunding."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="RAISING MONEY WITH LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Whoever is not able to give a donation, may be willing to give a loan.  Loans do not have to come only from banks. Loans can also come from friends or family.  There are many other sources of loans but getting deeper into the topic of loans is outside the scope of this article."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="PROFESSIONAL INVESTORS"
+    style="@style/instruction_heading"
+    />
+
+
+
+
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="After raising some money using any combination of ways described above, you should be able to get to some milestone in your business.  That milestone can be different for different businesses. It can be getting to certain revenue metrics, or number of users, or opening a physical store. As long as you are able to show with statistics or some measurements the progress you made with the money you have, that can be good data to bring to professional investors to ask for more money so that you can get to your next milestones."
+    style="@style/instruction_text"   
+    />
+
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="CONCLUSION"
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="The idea of this article is to highlight two things.  First is that your funding does not have to come just from one source.  And the second is that you can get creative with your fundraising.  And remember, raising money is a long and drawn-out process. "
+    style="@style/instruction_text"   
+    />
+
+
+
+
+
+
+
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+   
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

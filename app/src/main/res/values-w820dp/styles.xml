@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<style name="CustomTheme" parent="android:Theme.Light">
+    <item name="android:windowBackground">@color/white</item>
+    <item name="android:colorBackground">@color/white</item>
+</style>
+
+<style name="home_page_buttons">  
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:layout_marginRight">10dp</item>    
+    <item name="android:textStyle">bold</item>   
+    <item name="android:color">@color/white</item>  
+    <item name="android:layout_height">45dip</item>
+    
+    <!-- <item name="android:background">@drawable/white_button</item>  -->
+</style>
+
+<style name="home_page_two_buttons">    
+    <item name="android:textStyle">bold</item>   
+    <item name="android:color">@color/white</item>  
+    <item name="android:layout_height">45dip</item>
+    
+    <!-- <item name="android:background">@drawable/white_button</item>  -->
+</style>
+
+<!-- Information Pages -->
+<style name="instruction_text">  
+    <item name="android:padding">10px</item>
+    <item name="android:textSize">16sp</item>    
+</style>
+
+<style name="page_text">  
+    <item name="android:padding">10px</item>
+    <item name="android:textSize">14sp</item>    
+</style>
+
+<style name="instruction_quote">  
+    <item name="android:padding">10px</item>
+    <item name="android:textSize">12sp</item>    
+</style>
+
+<style name="instruction_heading">  
+    <item name="android:padding">10px</item>
+    <item name="android:textSize">17sp</item>   
+    <item name="android:textColor">@color/light_best_blue</item>      
+</style>
+
+
+
+</resources>

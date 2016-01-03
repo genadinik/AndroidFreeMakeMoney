@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FUNDING OVERVIEW"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Funding your company is almost always difficult. It almost always requires a sustained effort over a number of months, and quite often takes resources away from running the actual business.  
+
+\n\nThere are many options to help you fund your company. In this article we will go over pros and cons of many of the possibilities.
+
+\n\nNOTE ABOUT THE ARTICLE: Much of the information in this article applies to businesses all over the world, but keep in mind that most of the information is based on facts for raising money in United States."       
+    />
+
+	   
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FIRST: KNOWING HOW MUCH MONEY YOU NEED TO RAISE AND WHAT YOU NEED TO ACCOMPLISH WITH IT"
+    style="@style/instruction_heading"
+    /> 
+    
+
+
+
+<TextView
+	android:id="@+id/heading_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="When you are raising money, it should usually be with some goal in mind. The goal can be to reach certain revenue, profit or user numbers. The goal can be putting a product in the market, or buying equipment. The goal can even be to get to a point in your company growth from which you will be able raise more money.
+
+\n\nIn order to reach your goal, you need to calculate how much money it would take to reach it. That is how you can figure out how much money you need to raise. Once you know how much money you need to raise, you can plan a strategy making the most of any combinations of loans/grants/investment/donations in order to get to your funding goal."       
+    /> 		
+
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SETTING REASONABLE EXPECTATIONS"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/heading_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Unfortunately, most companies never raise money, get loans, or grants. While there is quite a bit of money out there held by investors, banks, or the government in order to put into small businesses, it is actually a very small sum compared to how much all entrepreneurs who would like to raise money, would need.  
+
+\n\nAdditionally, most early-stage businesses are simply not a fit to get most bank loans, government grants, or investments from professional investors.
+
+\n\nSo keep in mind that there is some risk involved in trying to raise money. You are risking time and resources which can often equate to money spent."       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="AVOID OR HOLD OFF FUNDING AS LONG AS POSSIBLE"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="As previously mentioned, focusing on raising money will take resources away from your efforts. Those resources could have otherwise been used to improve product quality, marketing, sales, or any other task needed to grow the company.
+
+\n\nAdditionally, for many businesses, a plausible alternative path is to focus on product quality and sales/marketing so that the company can earn money from its revenue instead of taking outside money. "       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="CHEAP WAYS TO FUND YOUR COMPANY"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Many types of business require large amounts of money. It is extremely difficult to raise large sums of money. Sometimes that becomes a barrier to starting the company. In such cases it may be a good alternative to consider a different kind of a strategy where the business is cheaper to start. 
+
+\n\nFor example, instead of a restaurant, it may be better to start with a food cart or truck. Or instead of having a gym or exercise studio, it may be simpler to start by partnering with a gym by taking advantage of their space.  In case of complex website and online business ideas, it may be a better option to start with simpler ideas and work your way up. Whatever your business may be, try to think of alternatives that make financial sense."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SELF-FUNDING AS A FUNDING OPTION"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you can find an inexpensive strategy to get your business off the ground, self-funding becomes a viable option. Some of the best things to do is to save money by working in the industry in which you are looking to start your business. Doing that will allow you to get paid to learn the industry so that when you are ready to start your business, you have more money, experience and knowledge of the industry.
+
+\n\nOf course, putting your own money on the line is a big risk. But it can help you focus only on your business and allow you to remain independent of needing outside money, and to focus purely on running your business."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FUNDING FROM YOUR OWN REVENUE"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="One of the best ways to fund your company is through the revenue of the company. If you have a way to get revenue from clients, you can spend a part of that revenue trying to get more paying clients.  Getting paying clients, and learning how to get more and more of them is precisely what can make your business sustainable. It is very difficult for a new business to make itself profitable from revenue in the early stages, but if you can, often it is the best route."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FUNDING OPTIONS:  DONATIONS, GRANTS, LOANS, INVESTMENT"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="While it is good to focus on ways you can avoid raising money, there is definitely a time and place for taking outside funds to help your companies.  The four typical ways of raising money are donations, grants, loans, or securing an investment."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="DONATIONS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There are a number of ways to raise donations. The newest and most popular approach is discussed in an article entirely devoted to the topic which is called crowdfunding. "
+    style="@style/instruction_text"   
+    />
+  
+<Button
+	android:id="@+id/donations_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="More About Donations"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<TextView
+	android:id="@+id/heading_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="GRANTS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Grants can be individual grants or government grants.  This topic is more fully covered in the a section of the app dedicated solely to grants."
+    style="@style/instruction_text"   
+    />
+
+<Button
+	android:id="@+id/grants_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="More About Grants"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+
+<TextView
+	android:id="@+id/heading_eleven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_eleven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Loans can be personal loans from friends or family, government loans, or bank loans. We discuss the topic in the loans section of this app."
+    style="@style/instruction_text"   
+    />
+
+<Button
+	android:id="@+id/loans_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="More About Loans"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<TextView
+	android:id="@+id/heading_twelve"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="INVESTMENT"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_twelve"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There are many different kinds of investments and investors. The topic is discussed more fully in an article dedicated entirely to the topic of investment."
+    style="@style/instruction_text"   
+    />
+
+<Button
+	android:id="@+id/investments_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="More About Investments"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+   
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />      
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+                   
+                            

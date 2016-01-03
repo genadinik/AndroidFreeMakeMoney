@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >         
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>    
+    
+<TextView
+android:id="@+id/question_label"  
+android:maxLines = "4"
+android:scrollbars = "vertical"  
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Your question: "
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+/>     
+
+<!-- 
+<TextView
+	android:id="@+id/view_name"    
+    android:maxLines = "4"
+	android:scrollbars = "vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Business:"
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />
+     -->  
+
+
+
+
+    <EditText  
+        android:id="@+id/question_text"  
+        android:layout_height="wrap_content"  
+        android:inputType="textMultiLine"  
+        android:lines="4"  
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+
+        android:layout_width="fill_parent">  
+    </EditText>
+
+<Button  
+        android:id="@+id/submit"  
+        android:layout_height="wrap_content"  
+        android:text="Submit"  
+        android:onClick="sendFeedback"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">  
+    </Button>       
+
+<TextView
+android:id="@+id/please_wait"    
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:padding="10px"
+android:text="Please wait while the discussion loads..."
+/>     
+
+<ListView
+android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@+id/label"
+    android:textSize="20px" >        
+</ListView>
+
+</LinearLayout>

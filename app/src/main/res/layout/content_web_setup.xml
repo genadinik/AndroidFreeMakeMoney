@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	    
+	        
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+
+	      <TextView
+	android:id="@+id/web_setup_page_title"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="CREATE YOUR WEBSITE TODAY: PROFESSIONALLY AND INEXPENSIVELY, ON YOUR OWN, WITHOUT NEEDING TECH SKILLS"
+	style="@style/instruction_heading"
+	/>
+
+    <!-- 
+<TextView
+	android:id="@+id/web_setup_heading_0"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_quote"    
+    android:text="'While we are postponing, life speeds by.' - Seneca"
+    />   
+ -->
+
+<TextView
+	android:id="@+id/web_setup_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="Whether your business is an online business, a restaurant, a gardening business or any other, a website can help you get discovered by potential clients, and help during the sales process when potential clients want to do more research about your business.
+    
+\n\nOnce you have a website, you will be able to begin to promote your business online and drive people to that site."
+    />    
+    
+<TextView
+	android:id="@+id/domain_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="FIRST: YOU NEED A DOMAIN NAME FOR YOUR WEBSITE"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="Your website's domain name is extremely important. It is often a part of the first impression that people get about your business, and it is how many people remember your business.  There are many things to consider when choosing a domain name for your website. For that reason we have an entire article dedicated to helping you choose your website's domain name."
+    />    
+
+        <Button
+	android:id="@+id/choosing_domain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="How To Choose a Domain Name"
+    style="@style/home_page_buttons" 
+    />   
+<!--     android:background="@drawable/button"
+ -->
+        
+<TextView
+	android:id="@+id/domain_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp" 
+	android:text="CREATING THE SITE"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="After seeing many of the businesses on our apps struggle to build a great website due to the expenses such as hiring a developer or an agency to build and maintain the website, and having to pay them even more money every time a change needs to be made, we have found a perfect solution.
+
+\n\nTo enable you to create your own professional site quickly and inexpensively, we recommend using Wordpress hosted on an inexpensive server. Below, we have a detailed step-by-step tutorial for setting up your site."
+    />    
+<!-- \n\nhttp://www.problemio.com/website.html
+\nBecause the article is pretty detailed, it is quite long. So we made it available on the web so you can follow it from your computer which has a bigger screen. 
+\n\nThe step by step guide details each step of setting up your site in a very short time, 
+and very cheaply (sometimes even free).
+\n\nIn setting up hosting, getting design templates, adding a content management system so you can easily create new pages on your site and much more. 
+ 
+ -->
+
+
+ 
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp" 
+	android:text="YOU NEED HOSTING FOR YOUR WEBSITE"
+	style="@style/instruction_heading"
+	/>
+     
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="Hosting is the term for the web server that serves up your website when people visit your domain name. Every website needs to be hosted somewhere. For most sites, hosting is very cheap at just a few dollars a month.
+
+A reputable and professional hosting company is BlueHost. They also have very good phone and online tech support.
+
+\n\nPlus, BlueHost gives you a free domain name when you sign up through the link below."
+    />   
+
+
+
+        <Button
+	android:id="@+id/bluehost"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Get Hosting For Your Website And A Free Domain Name"
+    style="@style/home_page_buttons" 
+    />   
+
+<!-- 
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop ="5dp"
+	android:text="STEPS TO CONFIGURE YOUR DOMAIN TO YOUR HOSTING"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="Once you have a domain name and a hosting server, you need to point your domain name to get served up by the hosting server.
+
+\n\nOpen your email from Bluehost, and look for the 2 nameservers. They will look something like ns1.bluehost.com
+
+\n\n* Log into GoDaddy. 
+\n* Go to Domains -> My Domains
+\n* Click on your domain name
+\n* Click on NameServers -> Custom Nameservers
+\n* Copy and paste your first nameserver in the first nameserver box. Then copy and paste your second nameserver in the second nameserver box. Then click OK
+
+\n\nCongradulations! Your domain name is now pointed to your web host. It may take a few hours for this to go live on the internet, but you can still work on setting up your blog/website. 
+
+\n\nNow your site is live. But since it is new, it has nothing on it. So the next step is to put things on it like a nice design and create some pages."
+    />
+ -->
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="TO CREATE PAGES, INSTALL WORDPRESS ON YOUR HOSTING"
+	style="@style/instruction_heading"
+	/>
+
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+     style="@style/instruction_text"    
+    android:text="This will enable you to use Wordpress as your CMS (content management system). It is how you will add pages to your site.
+
+\n\n* Go to Bluehost.com and log in at the 'Control Panel Login' on the top right of the page
+\n* Scroll down to the 'Software / Services' heading, and click on 'Simple Scripts'
+\n* Click on the WordPress icon, choose the latest version of WordPress, and click 'Install Now'
+\n* Select a domain name, and leave the 'subfolder' box empty
+\n* Give your site a name and a catchy tagline.
+\n* Uncheck the checkbox next to 'Generate Admin Login' if you want to choose your own. Choose your Admin username and password. This will be for logging into your WordPress Dashboard for writing your posts and setting up your blog.
+\n* Keep the 'Automatically create a new database' checkbox checked
+\n* Check the legal agreement and click 'Complete'
+\n* Congradulations! You have just installed WordPress CMS to your site which will make it very simple for you to add new pages to your site."
+    />
+
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="LAST STEP: DESIGN"
+	style="@style/instruction_heading"
+	/>
+
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+     style="@style/instruction_text"    
+    android:text="With a design, you can make the site look and feel the way it needs to for your business type and business needs.
+    
+\n\nWordpress has many free design templates. They are usually quite good. But if you would like to have something a little extra, or something that is specific to your business type, you can buy Wordpress themes or get custom design. Even paid Wordpress themes are usually much cheaper than hiring a designer. And they tend to look great. Wordpress themes are typically in the $30-100 range. By the way, the word theme is what they refer to as design in the Wordpress world. Just think of theme and design as the same thing.
+
+\n\nTo start, you can use one of the free design themes from Wordpress."/> 
+        
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+     style="@style/instruction_text"    
+    android:text="Here is how to configure your theme once you choose one:
+
+\n\n* Log into your WordPress dashboard at 'YourDomainName.com/wp-admin'
+\n* Click on the 'Appearance' tab on the left hand side of the page
+\n* You will see some 'available themes' that are free and easy to set up. Click on 'preview' to see what they look like and what functions they have. To set these up all you need to do is click 'activate'
+\n* If you do not like any of these themes, then there are more themes available on the Elegant Themes site
+\n* To install these types of themes, go back to your WordPress dashboard and again click on the 'Appearance' tab on the left hand side of the page. Click on the 'Install themes' tab at the top of the page. Hit the 'upload' link, then hit 'browse'. Find and choose your downloaded theme and then hit 'install now'"
+    />
+
+
+
+
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="HELP AND TROUBLESHOOTING"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+     style="@style/instruction_text"    
+    android:text="Troubleshooting: If you run into problems or errors, here are 4 resources where you can get help:
+
+\n\n1) BlueHost has great tech support
+\n2) GoDaddy.com where you bought your domain name has great phone and email tech support
+\n3) wordpress.stackexchange.com is a great site where you can ask troubleshooting questions with Wordpress issues.
+\n4) Wordpress.org site has a support message board where you can ask questions to experinced Wordpress users."
+    />
+
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="CONGRATULATIONS! YOUR SITE IS READY FOR BUSINESS"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+     style="@style/instruction_text"    
+    android:text="Now you are ready to begin creating content, promoting the site, attracting customers, and selling whatever you intended to sell. Good luck!"
+    />
+
+
+<!-- 
+\n\nAdditionally, Wordpress has many community forums where you can ask questions if you get stuck, so you can resolve any issues you may have. So there is no danger of getting stuck half way through. The Wordpress community will help you. But you should be ok by just following the guide.
+
+\n\nAs soon as you create your site, it will enable you to promote your business on the web, sell products from your site, or enable you to point potential clients to a beautiful looking site that adds professionalism and credibility to your business.
+
+\n\nOnce your site is up and running, make sure you install an analytics package so that you can monitor the traffic that your site gets. The most popular such package is Google Analytics. You can find it at http://www.google.com/analytics
+
+\n\nAnd as always, if you have questions about any part of the process, you are welcome to ask questions on this app or any of our premium apps (we can only guarantee answers to questions posted from premium apps due to the high volume of questions that come from our free apps) and we will do our best to help you.
+ -->
+
+
+
+
+<TextView
+	android:id="@+id/web_setup_heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="ONCE YOUR SITE IS LIVE, YOU ARE READY TO PROMOTE IT"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_text_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    style="@style/instruction_text"    
+    android:text="You can drive traffic through your site through social media, other blogs and big websites, getting press, google search and much more. To get a sense of all the possibilities, take a look at our article for web marketing. And for premium marketing content, we have full online marketing guides on our premium marketing app."
+    />
+
+
+
+<Button
+	android:id="@+id/premium_marketing"        
+    android:layout_width="fill_parent"
+    android:layout_marginTop ="5dp"
+    android:layout_height="wrap_content"
+    android:text="$0.99 Learn To Promote Your Site Like a Pro Today With Our Marketing App"
+    style="@style/home_page_buttons" 
+    />
+
+
+
+
+
+
+
+        <!-- 
+<TextView
+	android:id="@+id/web_setup_heading_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="NEXT STEPS: PROMOTING YOUR SITE"
+	style="@style/instruction_heading"
+	/>
+
+<TextView
+	android:id="@+id/web_setup_text_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"    
+    android:text="Once you get your site up and running, it will be time to promote the site, and convert site visitors into customers. "/>
+    
+    
+        <Button
+	android:id="@+id/next_steps"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Next Steps For Your Site"
+    style="@style/home_page_buttons" 
+    />   
+ -->
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nWe hope this article was helpful to you and we wish you much enjoyment and success in your business."
+    style="@style/instruction_text"
+    />
+
+
+
+
+		
+
+
+  
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    style="@style/home_page_buttons" 
+	    android:layout_width="fill_parent">  
+	</Button> 	  
+  
+
+ 
+<Button
+	android:id="@+id/plan_app" 
+	android:layout_marginTop ="5dp"       
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Free Business Plan App"
+    style="@style/home_page_buttons" 
+    />	
+<!--     android:background="@drawable/button"
+ -->    
+
+
+<!-- 
+
+<TextView
+	android:id="@+id/share_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="You can also view and share this article on the web.  Please share it with your friends."
+    style="@style/instruction_text"
+    />
+
+    <Button
+	android:id="@+id/share_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/home_page_buttons" 
+    android:text="Access And Share Socially On The Web"
+    />  
+     -->
+
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

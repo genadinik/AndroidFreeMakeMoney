@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>   
+         
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" >    
+      
+<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >    
+<!-- 
+<TextView
+	android:id="@+id/instructions"    
+    android:layout_width="fill_parent"
+    android:layout_marginTop ="5dp"
+    android:layout_marginLeft="5sp"
+    android:layout_height="wrap_content"
+    android:text="Share the app via social networks by liking our home page which has links to our iPhone, iPad and Android apps so any of your friends can use it."
+    />    
+    
+<Button
+	android:id="@+id/like_home_page"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Like Our Home Page"
+    android:padding="10px" 
+    />
+ -->
+
+<TextView
+	android:id="@+id/instructions"    
+    android:layout_width="fill_parent"
+    android:layout_marginTop ="5dp"
+    android:layout_marginLeft="5sp"
+    android:layout_height="wrap_content"
+    android:text="Invite friends in two ways: 
+\n1) Fill out the email-invite form below or 
+\n2) Just give them the invite code."
+    />         
+
+
+<TextView
+	android:id="@+id/invite_code_snippet"    
+    android:layout_width="fill_parent"
+    android:layout_marginTop ="5dp"
+    android:textColor="@color/light_best_blue"
+    android:layout_marginLeft="5sp"
+    android:layout_height="wrap_content"
+    android:text="Generating invite code..."
+    /> 
+
+<!-- 
+<TextView
+	android:id="@+id/invite_code"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Loading..."
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />    
+ -->
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop ="10dp"
+    android:background="@color/dark_stail_gray"/>
+
+<TextView
+	android:id="@+id/form_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Invite Friends Form: "
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />        
+
+ 	
+		 
+<TextView
+	android:id="@+id/your_name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your name: "
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />	
+	    
+<EditText
+	android:id="@+id/your_name"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text=""
+    />   	
+		
+		
+		
+<TextView
+	android:id="@+id/friend_name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Friend's name: "
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />	
+	    
+<EditText
+	android:id="@+id/friend_name"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text=""
+    />   
+	
+
+
+<TextView
+	android:id="@+id/friend_email_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text="Friend's email:"
+    />	
+	    
+<EditText
+	android:id="@+id/friend_email"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text=""
+    />   		 
+<!-- 
+<TextView
+	android:id="@+id/to_emails_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text="Your email:"
+    />	
+	    
+<EditText
+	android:id="@+id/to_emails"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:text=""
+    /> 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginLeft="5sp"
+android:layout_marginRight="5sp"
+>    
+    
+    <Button
+	android:id="@+id/send_invite"
+    android:layout_width="0dp"
+    android:layout_marginTop ="5dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:text="Send Invite"
+    android:layout_toRightOf="@+id/send_business_plan"
+    />      
+     
+    <Button
+	android:id="@+id/invite_to_business"
+    android:layout_width="0dp"
+    android:layout_marginTop ="5dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:text="Back To Business"
+    android:layout_toRightOf="@+id/edit_business"
+    />          
+
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView> 
+
+</LinearLayout>

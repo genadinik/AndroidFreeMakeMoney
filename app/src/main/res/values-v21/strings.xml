@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Learn To Make Money</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Making Money App</string>
+    
+    <string name="fundraising">Fundraising Overview</string>
+    <string name="grants">Grants Overview</string>    
+	<string name="loans">Loans Overview</string> 
+	<string name="investments">Investments Overview</string> 
+	<string name="donations">Donations Overview</string>     
+    
+	
+    <string name="get_investment_heading">How To Get An Investment</string> 	
+    <string name="enter_invite_code_heading">Your Invites</string> 	
+    <string name="invite_friends_heading">Invite Friends To Plan</string> 	
+    
+    
+	
+    <string name="topic_screen">Fundraising Plan Topic</string> 	
+	<string name="help_instructions">Instructions for getting help</string> 	
+	<string name="add_plan">Start Your Fundraising Plan</string> 	
+    <string name="plan_screen">Your Fundraising Plan</string> 	
+    <string name="my_plans">Your Fundraising Plans</string> 	
+	<string name="settings">Settings</string> 	
+	<string name="login">Sign In</string>
+	<string name="forgot_password">Recover Password</string>	
+	<string name="update_profile">Update Profile Information</string> 	
+	<string name="create_profile">Create Profile</string> 	
+	<string name="feedback">Please Give Feedback</string> 			
+	
+	<string name="ask_question">Ask a Question</string> 	
+	<string name="my_questions">Questions I Asked</string> 	
+	<string name="question">Your Question</string> 				
+	
+	<string name="extra_help_heading">Further Help</string> 				
+		                 
+                           
+                               
+            
+	
+</resources>

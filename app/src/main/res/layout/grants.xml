@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="GRANTS OVERVIEW"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="NOTE: the specifics of this article refer to grants in United States.  
+
+\n\nThere are many grants available for various organizations and even individuals. The grants for individuals are not to be mistaken with personal financial assistance. These are still grants for particular projects. Of course, companies and nonprofits are eligible for more grants."       
+    />
+
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHO IS ELIGIBLE FOR A GOVERNMENT GRANT"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="To determine if you are eligible for a grant, visit the United States grant eligibility page listed towards the bottom of the article.
+
+\n\nCompanies, nonprofits, and individuals can be eligible for different grants.  Here are the types of grants most readily available:"       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="1) GOVERNMENT ORGANIZATIONS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Organizations within state and local governments, city or township governments, and special district governments are eligible for a number of different grants. Also eligible are Native American tribal governments (federally recognized and non-federally recognized)"       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="2) EDUCATIONAL ORGANIZATIONS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="A number of different types of organizations that deal with education are eligible to receive grants. These entities are independent school districts, public and state controlled institutions of higher education, and private institutions of higher education."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="3) NONPROFITS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Another popular category of organizations that are eligible for grants are 1) Nonprofits having a 501(c)(3) status with the IRS, other than institutions of higher education and 2) Nonprofits that do not have a 501(c)(3) status with the IRS, other than institutions of higher education."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="4) FOR PROFIT ORGANIZATIONS NOT CONSIDERED SMALL BUSINESS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="This is a less common category of organizations which are eligible for grants.  Towards the bottom of this article, there is a link to a tool where you can search for grant availability. If your project is in this category, that would likely be the most clear way to find out what grants are available for you."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="5) PUBLIC HOUSING"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="One of the more common types of grants for public housing is for Public Housing Authorities such as the Indian Housing Authorities for example. For more types of public housing grants available, check the grant-finding tool provided in the link at the bottom of this article."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="6) SMALL BUSINESSES"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Small business loans and small business grants may be awarded to companies that meet the size standards that the U.S. Small Business Administration (SBA) has established for most industries. The most common size standards are as follows:
+\na) 500 employees for most manufacturing and mining industries
+\nb) 100 employees for all wholesale trade industries
+\nc) $6 million for most retail and service industries
+\nd) $28.5 million for most general and heavy construction industries
+\ne) $12 million for all special trade contractors
+\nf) $0.75 million for most agricultural industries"
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="7) INDIVIDUALS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Individuals can apply for grants on their behalf, and not on behalf of a company, organization, institution, or government. Individuals sign the grant application and its associated certifications and assurances that are necessary to fulfil the requirements of the application process. 
+
+\n\nPeople applying as individuals will be able to apply to grant opportunities that are open to individuals. An individual cannot submit a grant application to a grant opportunity that is just open to organizations."
+    style="@style/instruction_text"   
+    />
+
+
+<TextView
+	android:id="@+id/heading_ten"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FURTHER RESOURCES"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_ten"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="To search for available government loans: 
+\nhttp://www.grants.gov/search/advanced.do
+
+\n\nMore on grant eligibility
+\nhttp://www.grants.gov
+
+\n\nAlso use this loans and grants search tool: 
+\nhttp://www.sba.gov/loans-and-grants"
+    style="@style/instruction_text"   
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+    
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

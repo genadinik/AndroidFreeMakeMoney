@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	
+	        
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+	     
+	           
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHEN YOUR SITE OR BUSINESS IS READY, WE WILL HELP YOU PROMOTE IT"
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Keep in touch with what we are doing via Twitter or YouTube, and let us know when your site or business is ready to be promoted. We will gladly share your new site or business on our growing social networks."
+    style="@style/instruction_text"
+    />          
+
+
+
+
+<TextView
+	android:id="@+id/heading_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SUBSCRIBE TO OUR YOUTUBE BUSINESS CHANNEL WITH NEW BUSINESS TIPS EACH WEEK"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="We post many videos where we share insider tips, tutorials, and guides that cover almost every part of starting a business. Please subscribe so you never miss a video. 
+    
+\n\nAnd if you want us to create a video on any business topic, just email\nalex@problemio.com\nAnd explain what business topic you are curious about, and we will make that video."       
+    />
+
+<Button
+	android:id="@+id/youtube_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Subscribe on YouTube"
+    style="@style/home_page_buttons"
+    android:layout_marginTop ="10dp" 
+    />
+
+	
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FOLLOW US ON TWITTER"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/description_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Please follow @problemio which is the Twitter handle for our apps, and tweet to us when you want us to retweet one of your tweets, or help promote your business on Twitter. "       
+    />
+
+<Button
+	android:id="@+id/problemio_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Visit @problemio on Twitter"
+    style="@style/home_page_buttons"
+    android:layout_marginTop ="10dp"
+    />
+
+ 
+ 
+
+<Button
+	android:id="@+id/back"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Back To Home Screen"
+    style="@style/home_page_buttons"
+    android:layout_marginTop ="10dp"    
+    />
+ 
+   
+-->    
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    

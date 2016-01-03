@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	    
+<include android:id="@+id/header"
+         layout="@layout/header"/>     
+     
+<TextView
+	android:id="@+id/page_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"  
+    android:text="PROVEN WAYS TO MAKE MONEY ONLINE" />
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Thousands of people are making money online while being at the comfort of their homes by being affiliate resellers, serving ads on their sites, making money from YouTube, and much more. There are many advantages to such businesses. You do not need to manage employees or inventory of good, and you can run this kind of a business from your home, and the potential revenue is great. In this article you will get ideas on how you can make money online in a number of ways, and give you plenty of tips and insider know-how!" />
+
+
+
+<TextView
+	android:id="@+id/heading7"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="1) STEP ONE. YOU WILL NEED A WEBSITE (CREATE ONE IN AS LITTLE AS ONE DAY)" /> 
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="You do not need a fancy site with complicated functionality. You can begin with as little as a blog that you can set up in less than a day, and for free. Of course, to really create a big business, you will need something professional, but it if you want to get started quickly, you can begin making money with just a blog. Setting up your website is s simple. We outline exactly how to do that (literally step by step) on this url of our home page if you want to use the web based tutorial: 
+\nhttp://www.problemio.com/website.html " />
+
+    <Button
+	android:id="@+id/website_setup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="Or Set Up Your Site Using The Guide On The App"
+    style="@style/home_page_buttons"    
+    />   
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="When your site is live, we will even help you promote it!" />    
+
+    <Button
+	android:id="@+id/website_promotion"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="How We Help Promote Your Site"
+    style="@style/home_page_buttons"    
+    />   
+    
+   <TextView
+	android:id="@+id/heading_b"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="FREE GROWTH TACTICS GUIDE FROM STARTUP JUGLE" /> 
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try the free growth tactics guide from our partners at the StartUpJungle, and learn how to grow your startup fast by using the growth hacks that the pros use. When you sign up, StartUpJungle sends out free information on how you can grow your startup company quickly."
+    style="@style/instruction_text"
+    />          
+
+<Button
+	android:id="@+id/jungle"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Visit StartUpJungle To Get Started"
+    style="@style/home_page_buttons" 
+    android:layout_marginTop ="10dp"    
+    />    
+    
+<TextView
+	android:id="@+id/marketing_heading"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="2) STEP TWO: REGISTER AS AN AFFILIATE OR FOR ADSENSE (20 MINUTES AND FREE)" />     
+    
+<TextView
+	android:id="@+id/marketing_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="If you want to make money by displaying ads on your site, you can register for Google AdSense at google.com/adsense 
+    
+\n\nAnd to become an affiliate reseller of goods, you can register to become an affiliate reseller at amazon.com clickbank.com cj.com (sommission junction) or any number of other affiliate sites. Once you have an account there, you will be given a URL to place on your site.  Whenever you create a new page or a blog post on your blog/website, just place these links where that is appropriate. And when the user goes on to buy something, you will get a commission of the sale. The commission depends on the product you will be selling.
+
+\n\nYou can set up both ads and your affiliate accounts. It is free, and we will show you how to take advantage of both of these in the upcoming sections of this article." />
+
+
+
+
+
+
+
+
+
+
+<TextView
+	android:id="@+id/fundraising_heading"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="3) STEP THREE: BEGIN PROMOTING YOUR BLOG ON WHICH YOU HAVE ADS AND AFFILIATE LINKS" />       
+    
+<TextView
+	android:id="@+id/marketing_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="You can begin promoting your blog on social media, SEO (Search Engine Optimization), with YouTube videos, by answering questions on Quora (links from Quora will drive traffic to your site and your YouTube channel), and much more. 
+    
+For a full marketing crash course and live help expert help, you can get our premium marketing app which is full of insider knowledge about promoting your business and website." />    
+
+
+   <Button
+	android:id="@+id/premium_marketing_app"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="Premium Marketing App"
+	    style="@style/home_page_buttons"    
+    />  
+
+
+<TextView
+	android:id="@+id/fundraising_heading"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="OPTIONAL BUT RECOMMENDED: CREATE A YOUTUBE CHANNEL" />       
+    
+<TextView
+	android:id="@+id/marketing_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Just as you will be promoting your products and serving ads from your website, you can do the same from videos you post on YouTube. You can maintain your own channel which will serve as an extra way for you to advertise your website AND an extra way you can directly make money. 
+    
+You can take videos from your computer or phone. But try to have the videos be as high quality as possible." />    
+
+
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Now you can begin making money as early as today! And don't forget, this app has expert help on it. If you have questions, please ask a question and we will get back to you and help you through the process.  Good luck!" />
+    
+<TextView
+	android:id="@+id/fundraising_heading"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="ANOTHER OPTIONAL WAY TO MAKE MONEY: SELL PRODUCTS FROM YOUR SITE" /> 
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Products can be anything that you create with your hands, or digital products like ebooks, online courses, premium content or memberships to various exclusive clubs or email lists that you run. You can sell such digital products right from your site to maximize revenue." />
+
+ 
+
+<!-- 
+<TextView
+	android:id="@+id/helpful_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"    
+    android:text="@string/useful_heading" /> 
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="@string/usful_text"
+    />
+ -->
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

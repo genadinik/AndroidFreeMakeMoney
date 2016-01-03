@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+
+<TextView
+	android:id="@+id/question_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter your question: "
+    />     
+    
+<EditText
+	android:id="@+id/question"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:lines="5"  
+    android:text=""
+    />    
+    
+<TextView
+	android:id="@+id/name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your name: "
+    />	
+	    
+<EditText
+	android:id="@+id/name"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />   
+	
+<TextView
+	android:id="@+id/email_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your email (we will alert you of answers via email): "
+    />	
+	    
+<EditText
+	android:id="@+id/email"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />   
+
+<TextView
+	android:id="@+id/error_message" 
+	android:textColor="@color/red" 
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Error: the email is already used in a another account. Please go to the home screen --> settings, and log into that account, or reset your password. "
+    />	
+
+    <Button
+	android:id="@+id/submit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:text="Submit"
+    />
+    
+</LinearLayout>
+
+</ScrollView>
+    
+</LinearLayout>

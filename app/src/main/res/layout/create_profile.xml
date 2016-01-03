@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+    
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+
+<TextView
+	android:id="@+id/name_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your name"
+    />         
+
+<EditText
+	android:id="@+id/name"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />    
+
+<TextView
+	android:id="@+id/email_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Login email address"
+    /> 
+
+<EditText
+	android:id="@+id/login_email"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />    
+
+<TextView
+	android:id="@+id/password_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter your password"
+    
+    /> 
+
+<EditText
+	android:id="@+id/password"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:inputType="textPassword" 
+    /> 
+
+<TextView
+	android:id="@+id/password_confirm_ask"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirm your password"
+    /> 
+    
+<EditText
+	android:id="@+id/confirm_password"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:inputType="textPassword" 
+    /> 
+    
+    <Button
+	android:id="@+id/submit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    />
+    
+      
+
+
+<TextView
+	android:id="@+id/got_account_question"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Have an account?"
+    />     
+		
+    <Button
+	android:id="@+id/login"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/light_best_blue"
+    android:text="Log In"
+    />  
+
+</LinearLayout>
+
+</ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+  
+<include android:id="@+id/header"
+         layout="@layout/header"/>  	        
+
+<TextView
+	android:id="@+id/page_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="PLEASE HELP TO SUPPORT THE APP. THANKS IN ADVANCE!"
+    />  
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    style="@style/instruction_text"    
+    android:text="This app is free, but it costs time and money to build and maintain. All we ask is that you consider giving back by learning how you could help."
+    />   
+    
+<!-- 
+<TextView
+	android:id="@+id/helpful_3"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="SOMETHING ALMOST ANYONE CAN AFFORD"
+    />    
+     
+    <Button
+	android:id="@+id/donation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="$0.99/Month Donation"
+    /> 		
+ -->
+ 
+<TextView
+	android:id="@+id/helpful_3"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="TRY PAID APP WITH MORE FEATURES AND EXPERT HELP"
+    />    
+
+<TextView
+	android:id="@+id/explanation_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp" 
+    style="@style/instruction_text"       
+    android:text="We have a premium app with many more features, articles, and expert help. "
+    />	
+
+    <Button
+	android:id="@+id/paid_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="$1.99 Premium App With Professional Assistance"
+    /> 			
+
+<TextView
+	android:id="@+id/heading_business_idea_app"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="BUSINESS-IDEA APP, FUNDRAISING APP, AND PREMIUM MARKETING APP"
+    />    
+
+<TextView
+	android:id="@+id/explanation_business_idea_app"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp" 
+    style="@style/instruction_text"       
+    android:text="So many of you asked for business ideas, information about raising money, and marketing. So we made whole seperate apps for it."
+    />	
+
+    <Button
+	android:id="@+id/fundraising_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="$0.99 Fundraising Information"
+    /> 			
+
+    <Button
+	android:id="@+id/business_idea_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="$0.99 Business Idea App"
+    /> 			    
+    
+    <Button
+	android:id="@+id/marketing_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="$0.99 Premium Marketing"
+    /> 		    
+
+<TextView
+	android:id="@+id/share_prompt"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="PLEASE SHARE OUR APP'S HOME PAGE WITH FRIENDS "
+    />        
+    
+<TextView
+	android:id="@+id/explanation_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp" 
+    style="@style/instruction_text"       
+    android:text="You can mention our url on your Twitter or Facebook or any other social media account to share with friends:
+\nhttp://www.problemio.com"
+/>
+
+<!-- 
+        <Button
+	android:id="@+id/share_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Share The App"
+    style="@style/home_page_buttons" 
+    />
+ -->
+        <!-- 
+<TextView
+	android:id="@+id/facebook_like_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="LIKE US ON FACEBOOK"
+    />        
+
+<TextView
+	android:id="@+id/explanation_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp" 
+    style="@style/instruction_text"       
+    android:text="Like our Facebook page or share a link to our home page on your Facebook wall so others can learn about this app.
+    
+\nYou can also share our home page url with others:
+\nhttp://www.problemio.com"
+    />	
+
+    <Button
+	android:id="@+id/press_like"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Like Our Facebook Page"
+    /> 			
+ -->
+ <!-- 
+<TextView
+	android:id="@+id/facebook_like_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="FOLLOW US ON TWITTER (WE WILL EVEN HELP TO PROMOTE YOU THERE)"
+    />        
+    
+<TextView
+	android:id="@+id/explanation_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp" 
+    style="@style/instruction_text"       
+    android:text="Follow us on Twitter, and tell us about your project. When you need it, we will help you spread the word there. "
+    />	
+
+    <Button
+	android:id="@+id/follow_on_twitter"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Follow on Twitter"
+    /> 	
+     -->
+     
+   <!-- 
+    <Button
+	android:id="@+id/we_promote"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Learn About How We Can Help Promote You"
+    /> 	
+     -->
+     
+<TextView
+	android:id="@+id/give_revie_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="IF YOU FEEL YOU EXPLORED THE APP ENOUGH: PLEASE CONSIDER POSTING A NICE REVIEW IN THE APP STORE"
+    />    
+    
+    <Button
+	android:id="@+id/give_review"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Add a Nice Review In the App Store"
+    /> 			
+    
+
+
+    <!-- 
+<TextView
+	android:id="@+id/helpful_3"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="CONGRADULATIONS! BY LEARNING HOW TO HELP US, YOU HAVE UNLOCKED PREMIUM FEATURES! SCROLL BELOW FOR YOUR PREMIUM FEATURES THAT ARE NOW FREE"
+    />  
+    
+    <Button
+	android:id="@+id/starting_mistakes"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Top-10 Business Starting Mistakes"
+    /> 			
+
+    <Button
+	android:id="@+id/psychology_of_entrepreneurship"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Psychology of Entrepreneurship"
+    /> 	
+    
+    <Button
+	android:id="@+id/business_plan_examples"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Business Plan Examples"
+    /> 			
+     -->
+    <!-- 
+    <Button
+	android:id="@+id/community_chat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Community Chat"
+    /> 			
+     -->
+    	    
+    
+    		
+        
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

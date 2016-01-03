@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	
+	        	        <include android:id="@+id/header"
+         layout="@layout/header"/>
+	        
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="THE BOOK BASED ON THIS APP, FOCUSING ON BUSINESS IDEAS AND STARTING YOUR BUSINESS"    
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Dear friends,
+
+\n\nLet me tell you the story of this app. When I first built it, I provided free help to every user of the app who asked for help. I spent countless hours helping people from different countries, and with different businesses. I became friends and stayed in touch with many of them. After a while, this app became one of the top business apps on Android, and I was not able to help everyone who asked for help simply because too many people were asking for help.
+
+\n\nSo I had to make help a paid feature. But by that time, I had helped over 1,000 people. And to date, over 300,000 people have benefited from my apps. And I am extremely excited to announce that I wrote a book that covers all the questions that people have asked me during my conversations with the 1,000+ entrepreneurs whom I personally helped (with all privacy preserved).
+
+\n\nSince the book was written based on the cumulative experience of all the entrepreneurs who came before you, I almost guarantee that it covers many of the issues you are curious about yourself.
+"
+    style="@style/instruction_text"
+    />          
+
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="And the print version of the book is available on Amazon.com"
+    style="@style/instruction_text"
+    />          
+
+
+<Button
+	android:id="@+id/amazon"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Get The Book on Amazon.com"
+    style="@style/home_page_buttons" 
+    android:layout_marginTop ="10dp"    
+    />
+
+
+
+
+
+
+
+
+   
+    
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+ android:orientation="horizontal"
+>
+    
+ <Button android:id="@+id/home_header"
+  android:layout_width="0dp" 
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:textColor="@color/white"
+  android:text="Home"
+  android:background="@drawable/ic_menu_not"
+  android:textSize="11dp"
+/> 
+ 
+   
+ 
+ <Button android:id="@+id/learn_header"
+  android:layout_width="0dp" 
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:text="Learn"
+  android:textColor="@color/white"
+  android:textSize="11dp"
+  android:background="@drawable/ic_menu_not"
+  android:layout_toRightOf="@+id/businesses_header"
+ />   
+ 
+ 
+<Button android:id="@+id/questions_header"
+ android:layout_width="0dp" 
+ android:layout_height="wrap_content"
+ android:textColor="@color/white"
+ android:layout_weight="1"
+ android:text="Plans"
+ android:textSize="11dp"
+   android:background="@drawable/ic_menu_not"
+android:layout_toRightOf="@+id/learn_header"  />  
+ 
+
+ 
+ <Button android:id="@+id/extra_help_header"
+  android:layout_width="0dp" 
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:textColor="@color/white"
+  android:text="More Help"
+  android:textSize="11dp"
+  android:background="@drawable/ic_menu_not"
+  android:layout_toRightOf="@+id/questions_header"
+ />   
+ 
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+  
+<include android:id="@+id/header"
+         layout="@layout/header"/>  	        
+
+<TextView
+	android:id="@+id/page_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="INSTRUCTIONS TO GET LIVE EXPERT HELP ON THE APP"
+    />  
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    style="@style/instruction_text"    
+    android:text="We answer all questions and requests to help plan fundraising on the app within 48 hours.  Most of the time we respond in under 6 hours. "
+    />   
+
+      
+<TextView
+	android:id="@+id/feedback_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    style="@style/instruction_text"    
+    android:text="For questions, use the question screen as chat. This is where our answers can be found, and where you can comment further. The chat appears below the text area on the question screen. That way you are able to have a conversation following the question.  
+    
+\n\nSimilarly, when you get help planning a business, each section can be used as collaborative chat between you and whoever is helping you. "
+    />   
+
+
+
+<TextView
+	android:id="@+id/give_back_feedback"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="PRIVACY INFORMATION"
+    />
+
+<TextView
+	android:id="@+id/feedback_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    style="@style/instruction_text"    
+    android:text="All questions and requests for help are seen only by staff.  If you choose to plan privately, no one sees the business except you. "
+    />   
+
+<TextView
+	android:id="@+id/who"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="WHO IS HELPING YOU"
+    />
+
+<TextView
+	android:id="@+id/who_explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    style="@style/instruction_text"    
+    android:text="All help is provided by our staff who have started businesses of their own. Additionally, across all our nearly 20 apps, there have been nearly 10,000 businesses, many of which we have helped and bring that experience to help you."
+    />   
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

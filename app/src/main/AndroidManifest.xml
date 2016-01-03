@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="make.money">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+     <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+        <activity
+            android:name="make.money.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+                        <activity
+            android:name=".ContentLearnActivity"
+            android:label="@string/fundraising" />    
+        
+                <activity
+            android:name=".VideoChannelActivity"
+            android:label="Our videos on making money" />                         
+                        
+                
+                
+                <activity
+            android:name=".JobActivity"
+            />                 
+                
+                <activity
+            android:name=".MakeMoneyVideoActivity"
+            /> 
+          
+                      <activity
+            android:name=".OurChannelActivity"
+            /> 
+
+                                            <activity
+            android:name=".SupportActivity"
+            android:label="Please support the app"
+            /> 
+                      
+                <activity
+            android:name=".ContentGrantsActivity"
+            android:label="@string/grants" /> 
+
+                <activity
+            android:name=".ContentLoansActivity"
+            android:label="@string/loans" />                 
+                
+                <activity
+            android:name=".ContentInvestmentActivity"
+            android:label="@string/investments" />    
+            
+                
+                <activity
+            android:name=".MyPlansActivity"
+            android:label="@string/my_plans" />                    
+
+                <activity
+            android:name=".HelpInstructionsActivity"
+            android:label="@string/help_instructions" />                
+                
+                <activity
+            android:name=".TopicActivity"
+            android:label="@string/topic_screen" />                   
+                
+                
+                <activity
+            android:name=".AddPlanActivity"
+            android:label="@string/add_plan" />                                    
+                
+                
+                <activity
+            android:name=".PlanActivity"
+            android:label="@string/plan_screen" />                
+                
+
+                <activity
+            android:name=".ContentDonationActivity"
+            android:label="@string/donations" />                  
+                
+                <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings" /> 
+
+                <activity
+            android:name=".CreativeFundraisingActivity"
+            android:label="Creative Ideas To Raise Money" />                 
+                
+
+                
+                <activity
+            android:name=".AskQuestionActivity"
+            android:label="@string/ask_question" />  
+            
+                <activity
+            android:name=".MyQuestionsActivity"
+            android:label="@string/my_questions" />                 
+            
+                <activity
+            android:name=".QuestionActivity"
+            android:label="@string/question" />                 
+                
+                <activity
+            android:name=".UpdateProfileActivity"
+            android:label="@string/update_profile" />                 
+                
+                <activity
+            android:name=".CreateProfileActivity"
+            android:label="@string/create_profile" />
+                
+                <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/feedback" /> 
+            
+                <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/forgot_password" />
+                
+                <activity
+            android:name=".LoginActivity"
+            android:label="@string/login" /> 
+            
+                <activity
+            android:name=".ExtraHelpActivity"
+            android:label="@string/extra_help_heading" />
+                
+                <activity
+            android:name=".HowToGetInvestmentActivity"
+            android:label="@string/get_investment_heading" />
+                
+                <activity
+            android:name=".EnterInviteCodeActivity"
+            android:label="@string/enter_invite_code_heading" />
+                
+			<activity
+            android:name=".InviteFriendsActivity"
+            android:label="@string/invite_friends_heading" />
+        
+			<activity
+            android:name=".BusinessIdeasActivity"
+            android:label="100 Business Ideas" />  
+            
+			<activity
+            android:name=".ResourcesActivity"
+            android:label="Financial Resources" />  			
+            
+			<activity
+            android:name=".PremiumIdeasActivity"
+            android:label="Make Money Online" />  			
+						
+			<activity
+            android:name=".ChooseDomainNameActivity"
+            android:label="Choosing A Domain Name" />
+			
+			<activity
+            android:name=".WebsiteSetupActivity"
+            android:label="Website Setup Guide" />				
+            
+			<activity
+            android:name=".KeepInTouchActivity"
+            android:label="We Help Promote Your Site" />				
+
+			<activity
+            android:name=".BooksActivity"
+            android:label="Books Based On These Apps!" />				
+
+			<activity
+            android:name=".MotivationActivity"
+            android:label="Join Our Entrepreneur Community!" />										
+			
+			<activity
+            android:name=".YoutubeActivity"
+             />								
+			
+			
+    </application>
+
+</manifest>

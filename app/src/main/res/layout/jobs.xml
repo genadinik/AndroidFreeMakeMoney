@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="BROWSE POSSIBLE JOBS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Take a look at some of these websites and browse for jobs there. You can make money and save towards the things you need by simply getting a job.
+    
+\n\nUnited States residents can browse thousands of relevant full-time and part-time jobs from across more than 25 industries at the Beyond.com career network. We are working on adding job sites from other countries. "       
+    />
+
+
+	<Button  
+	    android:id="@+id/beyond_jobs"  
+	    android:layout_height="wrap_content"
+	    android:text="Find a New Job with the Beyond.com Career Network now!" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+	
+	<!-- 
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Or get a part-time job with SnagAJob (North America only)" />
+
+    <Button
+	android:id="@+id/snag"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="Register To Look For Part-Time Jobs In North America"
+    style="@style/home_page_buttons"    
+    /> 	
+	 -->
+	 
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="GET A JOBS APP"
+    style="@style/instruction_heading"
+    />	
+
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Or look for work right on your phone by getting a jobs app"       
+    />
+	             
+	<Button  
+	    android:id="@+id/eresume"  
+	    android:layout_height="wrap_content"
+	    android:text="Get A Jobs App Now" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+	<!-- 
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SEND YOUR RESUME TO THOUSANDS OF EMPLOYERS"
+    style="@style/instruction_heading"
+    />	
+
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="When your resume is ready, ResumeRabbit can send your resume to 85 different job sites which are browsed by 1.5 million potential employers.  "       
+    />
+	             
+	<Button  
+	    android:id="@+id/rabbit"  
+	    android:layout_height="wrap_content"
+	    android:text="Try ResumeRabbit To Send Out Your Resume" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 		
+	     -->
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

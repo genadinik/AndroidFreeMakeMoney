@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	        	    
+	    
+	    
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">	
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>
+     
+	        
+	        
+
+<TextView
+	android:id="@+id/exec_summary_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="JOIN US ON FACEBOOK, TWITTER, YOUTUBE AND GET OUR EMAIL UPDATES"
+	style="@style/instruction_heading"
+	/>
+
+    		<TextView
+	android:id="@+id/summary_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="By liking and subscribing to our pages, you will get more free tutorials, and be the first to learn about free and discounted deals on any of our products. Plus get access to LOTS of free tutorials to help you start and grow your business."
+	style="@style/instruction_text"   
+    />     
+
+
+<Button
+	android:id="@+id/fb"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Join Our Facebook Group"
+    android:padding="10dp"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/twitter"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Follow Us On Twitter"
+    android:padding="10dp"
+    style="@style/home_page_buttons"  
+    />
+
+ <Button
+	android:id="@+id/newsletter"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Subscribe To Our Email Updates And Tutorials From Our Blog"
+    android:padding="10dp"
+    style="@style/home_page_buttons"  
+    />
+ 
+  <Button
+	android:id="@+id/youtube"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Subscribe To Our YouTube Channel"
+    android:padding="10dp"
+    style="@style/home_page_buttons"  
+    />	        
+	        
+	        
+        
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    

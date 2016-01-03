@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+    
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+        
+<TextView
+	android:id="@+id/prompt_to_enter_code"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Please enter the invite code send to you by a friend in order to plan together:"
+    />          
+  
+		<EditText  
+		    android:id="@+id/invite_code"  
+		    android:layout_height="wrap_content"  
+		    android:inputType="textMultiLine"  
+		    android:layout_width="fill_parent">  
+		</EditText>
+		
+				<Button  
+		    android:id="@+id/submit_invite_code"  
+		    android:layout_height="wrap_content"  
+		    android:text="Submit"  
+		    android:layout_width="fill_parent">  
+		</Button> 	
+		 				
+<TextView
+	android:id="@+id/invited_businesses_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+	android:text="BELOW IS A LIST OF BUSINESSES INTO WHICH YOU WERE INVITED"
+	style="@style/instruction_heading"
+	/>				
+				
+<TextView
+	android:id="@+id/invites_loading_prompt"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+ 	android:layout_marginRight="10dp" 
+    android:text="Getting the business(es) into which you were invited..."
+    /> 
+    
+    <ListView
+	android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="17sp"> 
+    </ListView>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

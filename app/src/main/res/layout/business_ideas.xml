@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="100 BUSINESS IDEAS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="NOTE: Once you find an idea you like, use our free business idea and business plan apps to determine whether that idea is right for you, and then plan it."       
+    />
+
+
+    <Button
+	android:id="@+id/business_ideas_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Free Business Ideas App"
+    />    
+ 
+
+
+    <Button
+	android:id="@+id/business_plan_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Free Business Plan app"
+    />      
+
+        <TextView
+    android:id="@+id/more_text" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="And if you would like to get expert help planning your business, determining if it is right for you, or figuring out how to get started, take a look at our premium apps where we offer expert help via chat, and you can ask questions."
+    android:textSize="15sp"
+    android:layout_marginLeft="10dp"
+    />    
+
+    <Button
+	android:id="@+id/premium_apps"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Our Premium Apps"
+    />      
+        
+        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FROM OUR PARTNER: EARN MONEY AND GIFT CARDS WITH IPOLL"
+    style="@style/instruction_heading"
+    /> 
+    
+        <TextView
+    android:id="@+id/more_text" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="iPoll offers an amazing way to generate extra cash right from your own home! You can sign up and begin taking polls and surveys, and making money today!"
+    android:textSize="15sp"
+    android:layout_marginLeft="10dp"
+    />  
+    
+    <Button
+	android:id="@+id/poll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Get The iPoll App And Begin Making Money Today"
+    />              
+    	   
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="NOW THE BUSINESS IDEAS"
+    style="@style/instruction_heading"
+    /> 
+    
+
+
+
+<TextView
+	android:id="@+id/heading_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="1) Make websites for people using Wordpress
+    
+\n\n2) Fixing people's computers and printers
+
+\n\n3) Lawn care
+
+\n\n4) Fixing bikes or making them look really cool
+
+\n\n5) Creating your own site and selling affiliate products on it for a commission. (Look up affiliate sales to learn more).
+
+\n\n6) Providing handyman services in your local city and neighborhood
+
+\n\n7) Perform freelance services on elance.com or odesk.com
+
+\n\n8) Renting out your available space on airbnb.com
+
+\n\n9) Use Rover.com to get gigs walking other people's dogs and pet sitting
+
+\n\n10) Selling t-shirts with various designs on them
+
+\n\n11) Helping people with clothing alterations
+
+\n\n12) Recycling cans 
+
+\n\n13) Placing vending machines in various venues and office buildings
+
+\n\n14) Learn how to make mobile apps and create apps for others
+
+\n\n15) Or create your own cools apps
+
+\n\n16) Start a blog and make money with ads
+
+\n\n17) Do small tasks for people via taskrabbit.com and get paid
+
+\n\n18) Join fiverr.com and make money by helping people there
+
+\n\n19) Write a short book and sell it on the Kindle. If you are already blogging, it can be a collection of blog posts.
+
+\n\n20) Are you a good cook? Hold cooking classes
+
+\n\n21) Create online courses and sell them on Udemy.com
+
+\n\n22) Washing and detailing cars
+
+\n\n23) Fix people's cars
+
+\n\n24) Provide taxi or shuttle services
+
+\n\n25) Help to care for elderly or disabled
+
+\n\n26) Babysit kids
+
+\n\n27) House-sit
+
+\n\n28) Become a gardener and help people with their gardens
+
+\n\n29) Carpet cleaning
+
+\n\n30) Office and residential cleaning
+
+\n\n31) Open a childcare center where people can leave their kids during work
+
+\n\n32) Provide tutoring services
+
+\n\n33) Coach a local sport team or individuals
+
+\n\n34) Help people with moving
+
+\n\n35) Provide professional resume writing help or cover letter writing help
+
+\n\n36) If you know a second language, teach it to people
+
+\n\n37) Provide a designated driver service to people who are drinking
+
+\n\n38) Provide personal training
+
+\n\n39) Clean out and haul junk
+
+\n\n40) Become a locksmith
+
+\n\n41) Help people with pest removal
+
+\n\n42) Provide doula services
+
+\n\n43) Find products and sell them at garage sales, eBay and other websites
+
+\n\n44) Become a local tour guide
+
+\n\n45) Create a hiking or other local event group on meetup.com and charge people to attend
+
+\n\n46) Provide photography services at events
+
+\n\n47) Start a workshop series teaching people something you know
+
+\n\n48) Help people organize and promote events
+
+\n\n49) Throw parties and charge for attending
+
+\n\n50) Help people with fashion by being a fashion consultant
+
+\n\n51) Do freelance writing or ghostwriting
+
+\n\n52) Apply for quick jobs at workmarket.com
+
+\n\n53) Provide laundry or ironing services
+
+\n\n54) Provide medical transportation to people to and from the hospital
+
+\n\n55) Be a wedding planner
+
+\n\n56) Rehab and resell homes
+
+\n\n57) Create and design, and then sell jewlery or clothing
+
+\n\n58) Become a YouTube personality and make money with ads
+
+\n\n59) Hold classes for doing creative things like painting, sculpting, or anything else
+
+\n\n60) Dog grooming
+
+\n\n61) Tech something via skillshare.com
+
+\n\n62) Become a tv or movie extra
+
+\n\n63) Operate a coffee van or a food truck
+
+\n\n64) Create hand-made candles or pots and sell it online
+
+\n\n65) Sell anything creative you make online via etsy.com or amazon.com or ebay.com
+
+\n\n66) Be a mobile barber or hair dresser and perform the work at people's homes
+
+\n\n67) Become a notary
+
+\n\n68) Participate in paid online and offline surveys
+
+\n\n69) Be a personal chef
+
+\n\n70) Pool cleaning services
+
+\n\n71) Provide singing or music lessons
+
+\n\n72) Teach kids to play chess or fitness activities (soccer, baseball, etc)
+
+\n\n73) Become a referee at a local recreational sports league
+
+\n\n74) If you are not afraid of renting out your own car, you can use getaround.com to make money by renting our your car
+
+\n\n75) Sperm donation (yes, people do make money doing this)
+
+\n\n76) Teach something on udemy.com
+
+\n\n77) Provide translation services if you speak more than one language
+
+\n\n78) Helping people prepare taxes during tax season
+
+\n\n79) Put advertising of another company on your car
+
+\n\n80) Put advertising of another company on your home or window
+
+\n\n81) Become a virtual assistant
+
+\n\n82) Provide design or web design services
+
+\n\n83) Think about whether you would be able to make and sell things online. What kind of things can you make?
+
+\n\n84) Open up a food stand 
+
+\n\n85) Can you paint people's homes?
+
+\n\n86) Can you paint cars?
+
+\n\n87) Start a local amateur sports league, and charge participants 
+
+\n\n88) Create Wordpress sites for people
+
+\n\n89) Provide marketing services and help people promote their sites and businesses
+
+\n\n90) Organize and plan trips for people
+
+\n\n91) Look for problems around you and see how you can fix them, or make them better. If you can also charge for that, then you have a business
+
+\n\n92) Become a caddy for golfers
+
+\n\n93) Do you know how to knit? You can sell the things you knit online
+
+\n\n94) Become a personal shopper
+
+\n\n95) Be a pedicab driver
+
+\n\n96) Become a personal shopper and concierge
+
+\n\n97) Be a professional entertainer however you can
+
+\n\n98) Perform snow removal in the winter
+
+\n\n99) Start a shoe-shining service
+
+\n\n100) Start a mobile cleaners business where you pick up and drop off the clothes"       
+    /> 		
+
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+   
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />    
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+                   
+                            

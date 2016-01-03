@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	
+	        
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+	      
+	        
+<TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />	        
+	        
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="HOW TO GET A GREAT DOMAIN NAME AS EARLY AS TODAY"
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Your domain name is extremely important. It can help you with marketing and it is a factor in how every visitor to your site perceives your brand. In fact, a domain name can play a very large role in whether people visit your site at all.  Your domain name is often the first thing people learn about your site so you have to make sure that your domain name makes a good first impression on them."
+    style="@style/instruction_text"
+    />          
+
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="THINGS TO DO"
+    style="@style/instruction_heading"
+    />
+
+
+
+<TextView
+	android:id="@+id/description_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="
+- Create relatively short domain names
+\n- Preferably use a .com domain name
+\n- Use a domain name that is simple to spell
+\n- Use a domain name that is easy to also remember
+\n- Use a domain name that gives some hint about what you are doing, but is not too specific. That will help you in case you have slight change in strategy in the future.
+\n- The domain name should also be easy to pronounce"       
+    />
+
+
+
+	
+
+<TextView
+	android:id="@+id/heading_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="HOW TO TELL IF A DOMAIN NAME IS AVAILABLE AND HOW MUCH IT COSTS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_2"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="GoDaddy.com is the leading site for looking up and registering domain names. Once you have an idea for the domain name you want, take a look at GoDaddy which offeres a tool to check whether a domain name is taken, and how much it would cost to buy if it is available."       
+    />
+
+<Button
+	android:id="@+id/godaddy"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Check Domain Name Availability Now"
+    android:layout_marginTop ="10dp"    
+    />
+<!--     android:background="@drawable/button"
+ -->
+
+<TextView
+	android:id="@+id/heading_3"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHAT NOT TO DO"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_3"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="
+- Make sure the domain name does not come close to violating trademarks of other companies. For example, do not get a domain name like facebooker.com
+\n- Do not make your domains too long to match an exact search phrase. 
+\n- Do not use dashes in your name like this: boston-cleaners.com
+\n- Do not use numbers in your domain name (with rare exceptions)
+\n- Avoid the .biz or .info domain names
+\n- Do not worry if you get it wrong. There is fix to a bad domain name, which is something called a 301 redirect. The way you fix a bad domain name, is in the future, buy a better domain name, and redirect your existing site to render under the new domain name."       
+    />
+
+
+<TextView
+	android:id="@+id/heading_4"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="EXAMPLE OF THE PROCESS OF CHOOSING THE DOMAIN NAME"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_4"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="An example of a good domain is for example: bostoncleaners.com The problem with this domain is that at the time we checked it, it was available, but because it is such a nice domain, it was listed at $5,000.  A reasonable workaround may be to change the domain name to bostonresidentialcleaners.com which is available for minimal price, but it sounds a lot more awkward than just bostoncleaners.com and potential customers might confuse the order of the words in the domain name and may never visit the site simply because they forgot the domain name."       
+    />
+
+<TextView
+	android:id="@+id/heading_5"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=".COM vs. OTHER DOMAINS SUCH AS .LY OR .CO OR .IO"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_5"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Because it is so difficult to get an high quality, yet affordable .com domain name, people started to branch out to other kinds of domain names ending in something other than .com. While some of these are acceptable, most of your potential users and people who are not in the technology space, have still not caught on to these. So they would not find it as simple to remember as the .com domains. Additionally, these domain names tend to be slightly more expensive than the traditional .com domain names."       
+    />
+
+<TextView
+	android:id="@+id/heading_6"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="CONSIDERING MARKETING"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/explanation_6"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Something to think about when choosing a domain name is how you will market your website. If your type of business is one that people search for such as cleaning, gardening, home repaid, or another kind of a service, then you may want to consider having your main search keyword in your domain. Some examples are bobscleaners.com or bostongardening.com or tomsroofing.com. 
+
+\n\nIf your business will rely on brand marketing, then you may want to have a more abstract domain name."       
+    />
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  "
+    style="@style/instruction_text"
+    />
+<!-- 
+
+\n\nAdditionally, if you have further questions, you can get 
+a personalized answer or get help planning your business and if you would like, 
+an experienced entrepreneur will help you, all within the app. 
+We hope this article was helpful to you and we wish you much enjoyment and success in your 
+venture.
+
+ -->
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop ="10dp"    
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+<!--     android:background="@drawable/button"
+ -->
+ 
+ 
+<!--  
+<Button
+	android:id="@+id/support_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Help Support The App"
+    android:background="@drawable/button"
+    android:layout_marginTop ="10dp"    
+    />
+ -->
+   
+    
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    

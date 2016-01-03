@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="VIDEOS ABOUT RAISING MONEY AND MAKING MONEY"
+    style="@style/instruction_heading"
+    />
+
+
+<TextView
+	android:id="@+id/description_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Our YouTube channel has 400+ videos about raising money, making money, starting a business, and marketing your business. We post a new video every day! So check for a new video each day, and learn more about busienss every day! "       
+    />
+  
+
+<Button
+	android:id="@+id/sub_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Subscribe To Our YouTube Business Channel And Come Back For New Videos Daily!"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="NOTE: Due to different Android hardware, some devices may not be able to play video.
+    
+\n\nIf the videos do not load for you, find all our videos on our YouTube channel at: 
+\nhttp://www.youtube.com/user/Okudjavavich"       
+    />
+
+
+<TextView
+	android:id="@+id/microloans_header"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FEW HANDPICKED VIDEOS ABOUT FUNDRAISING AND MAKING MONEY"
+    style="@style/instruction_heading"
+    /> 
+
+<Button
+	android:id="@+id/make_money_video"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Watch video on making money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+    
+<Button
+	android:id="@+id/creative"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Creative ways to raise money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/crowdfunding"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="How to raise donations via crowdfunding"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/grants"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="How to get grants"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/ideas"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Fundraising ideas"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/loans"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="How to get small business loans"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<TextView
+	android:id="@+id/microloans_header"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="VIDEOS ABOUT BUSINESS FINANCE"
+    style="@style/instruction_heading"
+    /> 
+
+<Button
+	android:id="@+id/recurring"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Earning recurring revenue with subscriptions"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/rev_biz"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Difference in revenue model vs. business model"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+<Button
+	android:id="@+id/freemium"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="The freemium business model explained"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+
+<!-- 
+<TextView
+	android:id="@+id/bank_loans_header"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="OUR BUSINESS CHANNEL ON YOUTUBE"
+    style="@style/instruction_heading"
+    /> 
+
+<TextView
+	android:id="@+id/bank_loans_first_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Watch all our videos about starting and growing a business, and making money in different ways. And please subscribe to our video channel in order to get updates when new videos come out. "       
+    /> 		
+	        
+<Button
+	android:id="@+id/watch_channel"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Watch our business channel on YouTube"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+ -->
+
+
+
+
+
+     
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

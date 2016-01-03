@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="INVESTMENT OVERVIEW BY TYPE AND COMPANY STAGE"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Securing an investment is never simple, and if you can, try to hold off as much as you can before you seek investment. Most people try to secure an investment too early, and either fail to secure one, or get one with bad deal terms. In general, it is considered good practice to focus on getting your company as far as you can without outside funds."       
+    />
+
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SELF-FUNDING, FRIENDS AND FAMILY STAGE"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="This is the planning and product-building stage when professional investors might be too hesitant to invest in a venture that is too new.  This stage is traditionally called the friends and family stage, but many people do not like that name because it is often NOT a good idea to take money from your family and involve them in your business.  Many people choose to put a little bit of their own money into the business by saving up, or working while they get the business up and running."       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SEED STAGE"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Seed stage investments are typically made by professional investors and they can range from $50,000 - $750,000 depending on many factors. To get a seed stage investment, you typically need to demonstrate some type of growth of your product in the marketplace, and be able to target a large market.    "       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="ANGEL STAGE INVESTMENTS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="This kind of investment has lots of overlap with seed stage investing, both in the types of investors who invest at this stage and the amounts of money that is put in.  The name angel investment does hint at slightly more company maturity."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SERIES A, B, AND C ROUNDS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There is a lot of talk of raising venture money, but the truth is that very few companies can ever even be considered for this type of an investment.  Venture capitalists require steady and phenomenal growth, a gigantic market after which your company is going, and a slew of other factors. Most companies never qualify for venture money and that is not a bad thing.  Raising venture capital can hurt the company because it limits the options you have as a company. The venture capitalists want growth and to shoot big. That might sound nice, but their money often comes with many unneeded pressures that can do considerable damage to your company. "
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHERE YOU CAN GO WRONG"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="1) Many people want investment too early. There are many things wrong with that.  First, the earlier you are, the least likely you will get your business funded. Most of the time when people try to get an investment for their company at a too-early stage, they just end up wasting their time which could be better spent on figuring out how to actually grow your company.
+
+\n\n2) Another problem with seeking investment too early is that even in the unlikely event that an investment can be secured, the deal will probably favor the investor, and the entrepreneur will get very poor deal terms and lose a larger portion of ownership."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHEN IS THE BEST TIME TO SEEK INVESTMENT"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There are many conflicting theories on when to get investment. Many smart people suggest taking the money whenever you can get it because you never know when the economy can change for the worse.
+
+\n\nAnother theory suggests that you should seek investment when you have a proven company model with market traction.  One way to understand that stage is when you are seeing that your target consumers are seeing your company as a good choice and your company is experiencing growth based on general market acceptance of your product or service.
+       
+\n\nIf you can, try to get as far as you can with your company without seeking outside funds. It is very difficult to run a company and live life on a minimal budget, but money is never as good as it seems either.
+     
+\n\nOne way to help yourself financially is to have a cost-effective business that does not require too much money to get started. Additionally, try to think through a viable business model which can help your company bring in revenue sooner than later so that you would be forced to rely on outside forces less than you would if your company struggled financially."
+    style="@style/instruction_text"   
+    />
+
+
+
+
+
+                              
+
+ 
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+   
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

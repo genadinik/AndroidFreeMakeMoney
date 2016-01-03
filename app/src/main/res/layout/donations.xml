@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="DONATIONS (CROWDFUNDING) OVERVIEW"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="NOTE: the specifics of this article refer to donations/crowdfunding in United States.  
+
+Crowdfunding (gathering many small donations that tends to add to a reasonable sum) has become a very popular way to raise money for many projects.\n\n"       
+    />
+
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHAT IS CROWDFUNDING"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Crowdfunding is a new type of funding which takes advantage of the power of the Internet, and allows the many people to donate to a project in which they believe. That is great for the entrepreneur starting the project as it gives him/her some free money with nearly no strings attached.
+
+\n\nCrowdfunding is a phenomenon that is rapidly growing. Many projects have already raised tens of thousands of dollars via this method of funding. The leader in the space is KickStarter.com and second site is IndieGogo.com"       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="KICKSTARTER"
+    style="@style/instruction_heading"
+    />
+
+
+
+
+
+
+
+
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="A site called kickstarter.com is the leader in this space. Originally they only allowed art projects to get funded, but now they are allowing a broader range of projects to raise money there. Their rules do frequently change to accommodate their growth, so for current rules, and to see if you are eligible to apply, check their site."       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="INDIEGOGO.COM"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="The second biggest crowdfunding site is indiegogo.com which is essentially a slightly smaller version of kickstarter. So if for some reason kickstarter does not work for you, you can possibly use indiegogo."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SPECIALIZED CROWDFUNDING SITES"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="There are also many crowdfunding sites that specialize in funding various niches. For example, appstori.com specializes in funding mobile apps. Science projects can get funding via petridish.org. There are many such sites popping up (and sometimes closing down) since this is a very new space, so if you are interested in crowdfunding, search for the kind of crowdfunding site that may work best for your type of project. 
+
+\n\nSome crowdfnding sites are more effective than others at raising money, so you have to judge what is right for you based on the nature of your project, and your funding needs.  
+
+\n\nIf you do want to give it a try, you need to do some research about how crowdfunding really works."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="HOW CROWDFUNDING REALLY WORKS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="The way these sites grow is by having the entrepreneur in charge of the project invite friends to donate to the project. The sites can help new people find projects to which they can donate, but the entrepreneur has to put in a big effort promoting their project and trying to find people to donate to the project.  Typically the crowdfunding sites take 4% of the total money raised. "
+    style="@style/instruction_text"   
+    />
+
+
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+    
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

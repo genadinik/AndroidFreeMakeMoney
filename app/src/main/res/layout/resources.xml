@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	    
+<include android:id="@+id/header"
+         layout="@layout/header"/>     
+     
+<TextView
+	android:id="@+id/page_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"  
+     android:text="FINANCIAL RESOURCES AND SERVICES YOU MAY FIND USEFUL" /> 
+     
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Note: some of the services mentioned below are our partners and some we recommend because they are the best. But all the companies mentioned are among the leaders in their space. " />
+
+
+
+    
+<TextView
+	android:id="@+id/website_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"    
+    android:text="MAKE MONEY WITH YOUR WEBSITE" /> 
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Second, get hosting with BlueHost. You also get a free domain name when you sign up for hosting at BlueHost."
+    />	
+      
+	<Button  
+	    android:id="@+id/bluehost_button"  
+	    android:layout_height="wrap_content"  
+	    android:layout_marginBottom ="10dp" 
+	    android:padding="10px"  
+	    style="@style/home_page_buttons"    
+	    android:layout_width="fill_parent"
+	    android:text="Get Your Hosting With BlueHost" 
+	    >  
+	</Button> 	
+	
+<TextView
+	android:id="@+id/heading_b"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="FREE WEBSITE GROWTH TACTICS GUIDE FROM STARTUP JUGLE" /> 
+
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try the free growth tactics guide from our partners at the StartUpJungle, and learn how to grow your startup fast by using the growth hacks that the pros use. When you sign up, StartUpJungle sends out free information on how you can grow your startup company quickly."
+    style="@style/instruction_text"
+    />          
+
+<Button
+	android:id="@+id/jungle"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Visit StartUpJungle To Get Started"
+    style="@style/home_page_buttons" 
+    android:layout_marginTop ="10dp"    
+    />	
+    
+<TextView
+	android:id="@+id/heading_b"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="FUNDRAISING AND LOANS" /> 
+    
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="If you need a small business loan, try lendio to see whether you qualify." />
+
+    <Button
+	android:id="@+id/lendio_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="United States: See If You Qualify For a Loan With Lendio"
+    style="@style/home_page_buttons"    
+    />         
+
+          
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Or raise money by getting a job." />
+
+    <Button
+	android:id="@+id/beyond_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="See jobs at Beyond.com"
+    style="@style/home_page_buttons"    
+    /> 
+    
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Or get an app to help you look for jobs" />
+
+    <Button
+	android:id="@+id/curadebt_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="Get The Jobs App"
+    style="@style/home_page_buttons"    
+    />     
+    
+
+<TextView
+	android:id="@+id/heading7"    
+    android:layout_width="fill_parent"
+    style="@style/instruction_heading"
+    android:layout_height="wrap_content"
+    android:text="EARN REVENUE BY TAKING ONLINE SURVEYS AND POLLS" /> 
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"     
+    android:text="Yes, it is possible to make money right from your own home, taking online surveys. You won't become a millionaire this way, but you can make some quick extra cash." />
+
+ 
+    <Button
+	android:id="@+id/shopping_cart_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="5dp"
+    android:text="Start Marking Money By Taking Online Surveys And Polls At iPoll"    
+    style="@style/home_page_buttons"    
+    /> 
+    
+ 
+
+    
+		    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="First, we must have realistic expectations.  Getting an investment is almost always very difficult, time consuming and is something that requires a lot of work on the part of the entrepreneur. Even with all that, most people never get an investment. In this article, we will go over how you can increase your chances to get an investment."       
+    />
+
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="UNDERSTAND HOW MOST INVESTORS INVEST"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Most investors don't just meet you and give you money. While most entrepreneurs need the money as soon as possible, investors often want to see you make progress. They want to know who and what they are investing in.  
+
+\n\nInvestors also tend to invest in themes such as certain business areas or company types. A theme can be only technology companies, or some niche within technology companies, or only restaurants, or any other business vertical.  Few investors invest in just about anything. Usually they choose a few business verticals where they can provide help and advice due to their experience in those verticals."       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="FIND INVESTORS WHO INVEST IN YOUR BUSINESS VERTICAL"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="You must identify investors whose investment themes match the type of business you are building. The investors do not have to be just professional investors. Sometimes people who have successfully created similar businesses to yours can also become investors in your company as well because they know this business so well."       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="DURING THE EARLY STAGES OF YOUR BUSINESS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Since investors don't usually invest after first meeting entrepreneurs, it is a good idea to reach out to the potential investors and successful business owners early in the process of starting your business. 
+
+\n\nThe purpose of reaching out to these people early is not to ask for money right away, but to see who is interested in having a conversation about your business, and who is able to give useful advice.  Most people will not be very interested in talking. For that reason, you must make as many such contacts as possible and begin building relationships with whoever you can. It usually takes a few months to raise money. So plan for those kinds of scheduling expectations."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="AS YOU WORK ON YOUR BUSINESS, KEEP DIALOG GOING"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="As you work on your business and face different challenges along the way, try to reach out to the potential investors and advisors with whom you had those initial conversations, and ask them for opinions or advice. A good interval of keeping in touch is 3-6 weeks per making a contact. That gives you time to show progress so that every time you talk to them, your business is better, more exciting, and slightly less risky.  People who help you the most, can be eventually asked to become partners either by investing or becoming advisors.
+    
+\n\nThat way, the people with who you have built the best working relationship and trust along the way, can be naturally invited into strengthening your business relationship. It is as though both of you have interviewed each other for the part over the past few months."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHEN ASKING FOR INVESTMENT"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="It is one things to ask for advice, but when asking for money, you must be extremely well prepared. You must show deep knowledge about every aspect of your business and how to grow it into a huge success. Among the typical things investors will want to hear about are the financials or your business, and how you will market and grow the business. They will also want to know that you have a deep knowledge of the industry overall. Of course, they will have their own options about every aspect of your business, but they need to hear the right answers from you to feel confident that you are a strong entrepreneur who will make the business a success.
+    
+\n\nIf you feel that you may need help in any of the aspects of your business, you can ask a question about it on this app and get expert help. If you are interested in learning how to best grow and market your business, we have an app dedicated solely to marketing and growing your business."
+    style="@style/instruction_text"   
+    />
+
+
+<Button
+	android:id="@+id/marketing_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="See Marketing App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="WHAT NOT TO DO"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Here are some common mistakes people make when talking to investors or other experienced business people.
+\n\n1) Do not get excited and over-explain things. They like clear and to the point explanations.  Spend most of your time listening to their feedback. Their time is valuable so make the most of it.
+\n\n2) Make sure you do your due diligence and know what this investor invests in, how they invest, and some of their previous investments.  
+\n\n3) Don't assume you will have plenty of time. If you get 15 minutes that is great so make sure to stay on point.
+\n\n4) Don't look at them as simply potential free money. If they invest, they become your partner. And the expectation is that you will do everything in your power to make sure they not only get their money back, but also make a profit on it.
+\n\n5) Don't come unprepared when it comes to having deep knowledge of your own business. You must know the industry and your business inside and out. Having strong experience in the field can increase your chances of getting an investment. And if you don't have that experience, you will be expected to either learn it, or have someone on your team who has the necessary experience."
+    style="@style/instruction_text"   
+    />
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+   
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+    
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	    
+<include android:id="@+id/header"
+         layout="@layout/header"/>
+
+
+
+<TextView
+	android:id="@+id/heading_0"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"   
+    android:text="OUR FREE APPS"
+    />
+
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"    
+    android:text="We offer a free business ideas app and a free business plan apps. The business idea apps explains some of the theory of business ideas, how to get them, how to tell which are good and more. And the business plan app teaches how to plan and start your business."/>
+
+<Button
+	android:id="@+id/free_ideas_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Business Ideas App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+<Button
+	android:id="@+id/free_plan_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Business Business Plan App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+<TextView
+	android:id="@+id/heading_0"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"   
+    android:text="OUR PREMIUM APPS"
+    />
+
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"    
+    android:text="We offer a 4-app business starting course based on the experiences of over 100,000 entrepreneurs who have used all our apps in the past, and the over 20,000 businesses that have been planned through all our apps. The other parts of the course are:
+\n1) Business ideas
+\n2) Business plan
+\n3) Marketing 
+\n4) Fundraising"/>
+
+<TextView
+	android:id="@+id/heading_0"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"   
+    android:text="BUSINESS IDEAS"
+    />
+
+<TextView
+	android:id="@+id/explanation_0"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Business ideas may seem like a simplistic topic, but many businesses go wrong at precisely the idea stage.  We compiled a number of guides and articles to help avoid common pitfalls and help get you on the right track."/>
+
+<Button
+	android:id="@+id/business_ideas_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Business Ideas App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+
+<TextView
+	android:id="@+id/heading_01"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"    
+    android:text="BUSINESS PLAN"
+    />
+
+<TextView
+	android:id="@+id/explanation_01"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"   
+    android:text="Get help planning your business from our expert staff or plan on your own. Whichever method you choose, a solid plan can help you avoid a number of mistakes when you start. "
+    />   
+
+<Button
+	android:id="@+id/business_plan_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Business Plan App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+
+<TextView
+	android:id="@+id/target_users_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"   
+    android:text="MARKETING YOUR BUSINESS"
+    />
+
+<TextView
+	android:id="@+id/explanation1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"    
+    android:text="Being able to effectively market and promote your business is the lifeline of your business. For that reason we created the marketing-plan app which has a number of articles and software tools to help you learn how to plan and exective your marketing strategies."
+    />   
+
+<Button
+	android:id="@+id/marketing_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Marketing App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+<TextView
+	android:id="@+id/target_users_heading"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"   
+    android:text="FUNDRAISING"
+    />
+
+<TextView
+	android:id="@+id/explanation1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"    
+    android:text="This app has a large overlap with the fundraising app. But on the fundraising app, we provide live expert help. So if you would like to get advice."
+    />   
+
+<Button
+	android:id="@+id/fundraising_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Fundraising App"
+    android:layout_marginTop ="10dp"    
+    style="@style/home_page_buttons"
+    />
+
+<!-- 
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"     
+    android:text="DID YOU FIND THE APP HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"   
+    android:text="If you found the app helpful, please consider giving us a nice review in the app store.  "
+    /> 				
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop ="10dp"    
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    style="@style/home_page_buttons"
+	    android:layout_width="fill_parent">  
+	</Button> 	
+ -->
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

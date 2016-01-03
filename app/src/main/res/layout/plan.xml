@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>    
+
+<TextView
+	android:id="@+id/view_name"    
+    android:maxLines = "4"
+	android:scrollbars = "vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan: "
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />       
+
+<TextView
+	android:id="@+id/business_privacy"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Loading..."
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    />    
+
+
+ 
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+ android:orientation="horizontal"
+>    
+    
+    <Button
+	android:id="@+id/business_invite_friends"
+    android:layout_width="0dp"
+    android:layout_marginTop ="5dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:text="Brainstorm With Friends"
+    android:layout_toRightOf="@+id/send_business_plan"
+    />      
+
+     
+    <Button
+	android:id="@+id/plan_review"
+    android:layout_width="0dp"
+    android:layout_marginTop ="5dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:text="Review App"
+    android:layout_toRightOf="@+id/edit_business"
+    />          
+<!-- 
+    <Button
+	android:id="@+id/examples"
+    android:layout_width="0dp"
+    android:layout_marginTop ="5dp"
+    android:layout_weight="1"
+	android:textSize="12dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/light_best_blue"
+    android:text="Examples"
+    android:layout_toRightOf="@+id/edit_business"
+    />      
+     -->
+</LinearLayout>    
+
+
+
+
+
+
+
+
+<TextView
+	android:id="@+id/think"    
+    android:layout_width="fill_parent"
+    android:layout_marginTop ="5dp"
+    android:textColor="@color/light_best_blue"
+    android:layout_marginLeft="5sp"
+    android:layout_height="wrap_content"
+    android:text="Fill out each section below."
+    />     
+    
+    <ListView
+	android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20px"
+       >        
+    </ListView>
+     
+    
+   
+</LinearLayout>

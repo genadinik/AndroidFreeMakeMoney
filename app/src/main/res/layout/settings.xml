@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+    
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+    
+ 
+    <Button
+	android:id="@+id/create_profile"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"
+    android:text="Create an Account"   
+    style="@style/home_page_buttons"  
+    />        
+    
+    <Button
+	android:id="@+id/login"
+	android:layout_marginTop ="15dp"     
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Log In"
+    style="@style/home_page_buttons" 
+    />  
+     
+     
+       <Button
+	android:id="@+id/fill_out_info"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Update Personal Information"
+    android:layout_marginTop ="15dp" 
+    style="@style/home_page_buttons" 
+    />  
+          <!-- 
+       <Button
+	android:id="@+id/logout_button"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Log out"
+    android:layout_marginTop ="15dp" 
+    android:textColor="@color/light_best_blue"
+    />
+     -->
+
+    <Button
+	android:id="@+id/different_user"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Sign In As a Different User"
+    style="@style/home_page_buttons" 
+    />
+ 
+    <Button
+	android:id="@+id/give_feedback"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Feedback and Tech Support"
+    style="@style/home_page_buttons" 
+    />    
+ 
+
+    <Button
+	android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Home Page"
+    style="@style/home_page_buttons" 
+    />
+
+    
+    
+   </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

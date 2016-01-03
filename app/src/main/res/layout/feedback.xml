@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >        
+
+<include android:id="@+id/header"
+         layout="@layout/header"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"/>
+
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:padding="5px">    
+      
+<LinearLayout 
+    
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >  
+
+<TextView
+	android:id="@+id/explanation"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop ="15dp"    
+    android:text="Please tell us what you think:
+\n1) How can the app be better?
+\n2) Did you need help in something that the app could not fulfill?
+\n3) What were you hoping to get from the app?
+\n4) What are your general thoughts?
+\n\n  -Thank you kindly for your feedback. 
+\nIf you want to hear back from us, simply add your email address in the feedback text." />
+    
+     
+		<EditText  
+		    android:id="@+id/feedbackText"  
+		    android:layout_height="wrap_content"  
+		    android:inputType="textMultiLine"  
+		    android:lines="5"  
+		    android:layout_width="fill_parent">  
+		</EditText>  
+
+		<Button  
+		    android:id="@+id/button_send_feedback"  
+		    android:layout_height="wrap_content"  
+		    android:text="Submit"  
+		    android:onClick="sendFeedback"
+		    android:textColor="@color/light_best_blue"		      
+		    android:layout_width="fill_parent">  
+		</Button> 
+
+    <Button
+	android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"    
+    android:text="Go To Home Page When Done"
+    android:textColor="@color/light_best_blue"
+    />
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

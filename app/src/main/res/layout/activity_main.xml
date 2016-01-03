@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#1BB5E0"
+        >
+    
+
+    
+<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" >    
+      
+<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        > 
+
+    <include android:id="@+id/header"
+         layout="@layout/header"/>  
+   
+    
+ <TextView
+    android:id="@+id/ask_question_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Common business ideas "
+    android:textSize="17sp"
+    android:layout_marginTop ="5dp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />    
+        
+     <Button
+	android:id="@+id/business_ideas"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="100 Basic Business Ideas To Make Money"
+    />    
+ 
+
+     
+ <TextView
+    android:id="@+id/video_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Videos about making money"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />    
+        
+     <Button
+	android:id="@+id/video_button"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Watch Videos About Making Money"
+    />     
+     
+<TextView
+    android:id="@+id/website_prompt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Make money online with a website"
+    android:textSize="17sp"
+    android:layout_marginLeft="15dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    />    
+    
+    <Button
+	android:id="@+id/money_online"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Ways To Make Money Online"
+    />   
+         
+<TextView
+    android:id="@+id/job_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Browse possible job opportunities"
+    android:textSize="17sp"
+    android:layout_marginLeft="15dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    />    
+    
+    <Button
+	android:id="@+id/job"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Make Money Through Finding A Job"
+    />         
+     
+<TextView
+    android:id="@+id/start_business_prompt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Learn to start a business"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />
+
+    <Button
+	android:id="@+id/more_apps_button"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Take Our 4-App Business Course"
+    />    
+    
+<TextView
+    android:id="@+id/fundraising_guides"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Learn fundraising fundamentals"
+    android:textSize="17sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />    
+    
+    <Button
+	android:id="@+id/learn"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Fundraising Overview"
+    />    
+    
+<TextView
+	android:id="@+id/youtube_prompt"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    android:text="More Of Our Free Apps"    
+    android:textSize="17sp"
+    android:textStyle="bold"
+    />       
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+> 
+
+        <Button
+	android:id="@+id/plan"
+	android:layout_marginTop ="5dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="10dp"
+    style="@style/home_page_two_buttons" 
+    android:text="Business Plan"
+    />       
+    
+    <Button
+	android:id="@+id/marketing"
+	android:layout_marginTop ="5dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    style="@style/home_page_two_buttons"
+    android:textSize="10dp" 
+    android:text="Marketing"
+    />
+    
+ 
+
+        <Button
+	android:id="@+id/ideas"
+	android:layout_marginTop ="5dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="10dp"
+    style="@style/home_page_two_buttons" 
+    android:text="Business Ideas"
+    />          
+        
+</LinearLayout>                
+    
+<TextView
+    android:id="@+id/books_prompt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Books inspired by this app series"
+    android:textSize="17sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />    
+    
+    <Button
+	android:id="@+id/books"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Books Based On Our Apps"
+    />       
+
+<TextView
+    android:id="@+id/plan_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Create your fundraising plans"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />        
+ 
+    <Button
+	android:id="@+id/plan_fundraising"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Create Your Fundraising Plans"
+    />      
+    
+    <TextView
+    android:id="@+id/start_guides" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Funding for business or projects"
+    android:textSize="17sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />    
+
+    <Button
+	android:id="@+id/funding_donations"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Donations"
+    />      
+    
+    <Button
+	android:id="@+id/funding_grants"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Grants"
+    />        
+
+    <Button
+	android:id="@+id/funding_loans"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Loans"
+    />  
+    
+    <Button
+	android:id="@+id/funding_investment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Investments"
+    />             
+    
+    <Button
+	android:id="@+id/creative_fundriaisng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Creative Ways To Raise Money"
+    />             
+
+    <Button
+	android:id="@+id/get_investment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="How To Get An Investment"
+    />            
+         
+    <!-- 
+<TextView
+    android:id="@+id/ask_question_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Get fundraising questions answered"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />
+
+    <Button
+	android:id="@+id/ask_direct_question"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Ask A Fundraising Question"
+    />      
+    
+    <Button
+	android:id="@+id/questions_i_asked"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Questions I Asked"
+    />         
+-->
+    
+       
+    
+    
+    <TextView
+    android:id="@+id/more_apps_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Please help support the app"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginLeft="15dp"
+    />
+
+    <Button
+	android:id="@+id/support_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Please Help Support The App"
+    />      
+    
+    
+    
+    
+<TextView
+    android:id="@+id/community_prompt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="New! Get Help With Our Community"
+    android:textColor="@color/white"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />   
+    
+
+
+        <Button
+	android:id="@+id/community"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Join Our Entrepreneur Community"
+    />             
+    
+    
+<TextView
+    android:id="@+id/resources_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="More helpful resources"
+    android:textColor="@color/white"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />   
+    
+
+
+        <Button
+	android:id="@+id/financial_resources"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Extra Resources"
+    />         
+    
+<TextView
+    android:id="@+id/settings_prompt" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Account settings"
+    android:textColor="@color/white"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="15dp"
+    />   
+    
+
+
+        <Button
+	android:id="@+id/settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop ="5dp"
+    style="@style/home_page_buttons" 
+    android:text="Settings and Tech Support"
+    />     
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+   
+</ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+

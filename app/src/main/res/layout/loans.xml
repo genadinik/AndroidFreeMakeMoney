@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        >
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+	        <include android:id="@+id/header"
+         layout="@layout/header"/>  
+
+<TextView
+	android:id="@+id/heading_1"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/fundamentals_description"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="NOTE: the specifics of this article refer to loans in United States, but the general principles are very similar in many different countries.  
+
+\n\nThere are many loans available for various organizations and even individuals. In this article we will go from the simplest ways to get a loan to the most difficult."       
+    />
+
+<TextView
+	android:id="@+id/microloans_header"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="MICROLOANS AND NON-BANK LOANS"
+    style="@style/instruction_heading"
+    /> 
+
+<TextView
+	android:id="@+id/microloans_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Since traditional banks typically do not lend money to businesses which have not yet started or have been in business under 6 months, entrepreneurs can get loans from non-bank institutions.
+
+\n\nThese institutions typically vary among each other in 
+\n1) How much money they are able to lend, at what rates.
+\n2) Minimum personal credit scores they require. 
+\n3) Loan amounts they can provide
+\n4) The rates they are able to give on the loans
+
+\n\nThere are many such loan options available. Most of the available options geared towards businesses which have been in business at least 3-6 months and have at least a few thousand dollars in monthly revenue. 
+
+\n\nCompanies which are just looking to get started, do not have too many options. Since most of the requests we get are precisely people who have not yet started their businesses, we partnered with Lendio which is a company that helps connect people to the right loan options and applications for business credit."       
+    /> 		
+
+<Button
+	android:id="@+id/lendio"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Visit Lendio to get matched to the right loan."
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+
+
+<TextView
+	android:id="@+id/bank_loans_header"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="BANK LOANS"
+    style="@style/instruction_heading"
+    /> 
+
+<TextView
+	android:id="@+id/bank_loans_first_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="Typical bank business loans break down into the below sections, and terms and the availability of the loans vary on many factors like the conditions of the economy, the business, and how risky the bank feels the loan is. Factors that make the loan more likely are company progress and cases when the entrepreneur has deep experience in the industry, or has previously started similar businesses."       
+    /> 		
+	        
+<TextView
+	android:id="@+id/page_exlain"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SECURED LOANS"
+    style="@style/instruction_heading"
+    />    
+
+<TextView
+	android:id="@+id/text_two"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="These loans are typically issued to businesses in order to finance purchases of inventory, various materials or equipment used in the business. These loans could also be used when refinancing business debt or financing account receivables. In most cases, these are much more readily available to established businesses and many banks require proof that the business has been in existence for a certain period of time."       
+    /> 		
+
+<TextView
+	android:id="@+id/heading_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="EQUIPMENT LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_three"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_text"  
+    android:text="These loans are typically issued by banks in order to purchase various equipment required by the company. Similarly to other types of business loans, these loans tend to also require that the business has been operational for some time as new businesses are much less likely to get such loans."       
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="VEHICLE LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_four"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="By now you are seeing the pattern that the loans are generally broken down and categorized by a type of very common need of a business. This particular type of loan is intended for a purchase of a vehicle. These loans also tend to require that the business has been operational for some time."
+    style="@style/instruction_text"   
+    />
+
+
+
+<TextView
+	android:id="@+id/heading_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="REAL ESTATE LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_five"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="These are loans intended to finance existing or new commercial real estate.  Depending on the bank, these loans also typically require the business to have been operational for some time."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="AGRICULTURE LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_six"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="These loans are intended for businesses having to do with farming, ranching and agriculture. These loans let borrowers finance purchases of land, production expenses, livestock and farming equipment. "
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="CASH-SECURED LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_seven"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="These tend to be the most flexible loan options offered by banks. There are choices between taking on a fixed or variable rate. These loans can be used in place of the above types of loans to purchase vehicles, materials, or equipment.  As the name of the loan suggests though, the bank typically requires a cash reserve as collateral for the loan. The borrower usually has to be able to prove that he or she has enough liquid assets to pay back the loan."
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="GOVERNMENT LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_eight"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Take a look at this reference site for government loans for small business and start-up loans: 
+\nhttp://www.sba.gov"
+    style="@style/instruction_text"   
+    />
+
+<TextView
+	android:id="@+id/heading_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="PRIVATE LOANS"
+    style="@style/instruction_heading"
+    />
+
+<TextView
+	android:id="@+id/text_nine"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Private loans are available from private individuals such as friends and family or private companies that specialize in private loans and various types of financing.  We will cover these topics in more depths in future updates of the app."   
+    />
+
+
+
+
+
+<TextView
+	android:id="@+id/helpful"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/instruction_heading"
+    android:text="DID YOU FIND THIS HELPFUL?"
+    />
+
+<TextView
+	android:id="@+id/helpful_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="If you found this helpful, please consider giving us a nice review in the app store.  
+\n\nAdditionally, you can try to create your plan to make money right on this app."
+    style="@style/instruction_text"
+    />
+
+	<Button  
+	    android:id="@+id/give_review"  
+	    android:layout_height="wrap_content"
+	    android:text="Please Consider Giving the App a Nice Review" 
+	    android:padding="10px"
+	    style="@style/home_page_buttons"  	    
+	    android:layout_width="fill_parent">  
+	</Button> 	
+
+
+<Button
+	android:id="@+id/plan_fundraising"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Plan How You Will Make Money"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />
+   
+    
+<TextView
+	android:id="@+id/business_plan_text"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Or learn to plan and start a business on our business plan app."
+    style="@style/instruction_text"
+    />
+
+<Button
+	android:id="@+id/biz_app"        
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Try The Free Business Plan App"
+    android:padding="10px"
+    style="@style/home_page_buttons"  
+    />        
+    
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
