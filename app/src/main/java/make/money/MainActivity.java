@@ -96,7 +96,7 @@ public class MainActivity extends BaseActivity
         Button video_button = (Button)findViewById(R.id.video_button);
         Button support_app = (Button)findViewById(R.id.support_app);
         Button job = (Button)findViewById(R.id.job);
-        Button financial_resources = (Button)findViewById(R.id.financial_resources);
+        //Button financial_resources = (Button)findViewById(R.id.financial_resources);
         Button money_online = (Button)findViewById(R.id.money_online);
         //Button books = (Button)findViewById(R.id.books);
         Button community = (Button)findViewById(R.id.community);
@@ -131,15 +131,15 @@ public class MainActivity extends BaseActivity
             }
         });        
         
-        financial_resources.setOnClickListener(new Button.OnClickListener() 
-        {  
-            @Override
-			public void onClick(View v) 
-            {            	
-              Intent myIntent = new Intent(MainActivity.this, ResourcesActivity.class);
-              MainActivity.this.startActivity(myIntent);
-            }
-        });            
+//        financial_resources.setOnClickListener(new Button.OnClickListener()
+//        {
+//            @Override
+//			public void onClick(View v)
+//            {
+//              Intent myIntent = new Intent(MainActivity.this, ResourcesActivity.class);
+//              MainActivity.this.startActivity(myIntent);
+//            }
+//        });
         
         job.setOnClickListener(new Button.OnClickListener() 
         {  

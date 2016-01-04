@@ -395,7 +395,7 @@ android:layout_marginRight="10dp"
     android:text="Join Our Entrepreneur Community"
     />             
     
-    
+    <!--
 <TextView
     android:id="@+id/resources_prompt" 
     android:layout_width="fill_parent"
@@ -416,7 +416,8 @@ android:layout_marginRight="10dp"
     android:layout_marginTop ="5dp"
     style="@style/home_page_buttons" 
     android:text="Extra Resources"
-    />         
+    />
+    -->
     
 <TextView
     android:id="@+id/settings_prompt" 

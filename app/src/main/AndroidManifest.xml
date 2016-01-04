@@ -150,13 +150,9 @@
         
 			<activity
             android:name=".BusinessIdeasActivity"
-            android:label="100 Business Ideas" />  
-            
-			<activity
-            android:name=".ResourcesActivity"
-            android:label="Financial Resources" />  			
-            
-			<activity
+            android:label="100 Business Ideas" />
+
+        <activity
             android:name=".PremiumIdeasActivity"
             android:label="Make Money Online" />  			
 						
