@@ -16,33 +16,125 @@ public class BooksActivity extends BaseActivity
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.business_book);
 
-	    
 
-        
-//        Button fiverr = (Button)findViewById(R.id.fiverr);          
-//        fiverr.setOnClickListener(new Button.OnClickListener() 
-//        {  
-//            public void onClick(View v) 
-//            {        	
-//              Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
-//            		  Uri.parse("http://fiverr.com/genadinik/send-you-a-60-page-book-on-business-ideas"));
-//              
-//              startActivity(browserIntent);
-//            }
-//        });
+        Button niche = (Button)findViewById(R.id.niche);
+        niche.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/How-find-business-niche-Ideas-ebook/dp/B0197T77CS"));
 
-        Button amazon = (Button)findViewById(R.id.amazon);          
-        amazon.setOnClickListener(new Button.OnClickListener() 
-        {  
-            public void onClick(View v) 
-            {        	
-              Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
-            		  Uri.parse("http://www.amazon.com/Business-Start-up-Ideas-Comprehensive-entrepreneurs/dp/1495261840"));
-              
-              startActivity(browserIntent);
+                startActivity(browserIntent);
             }
-        });        
-        
+        });
+
+        Button startbusiness = (Button)findViewById(R.id.startbusiness);
+        startbusiness.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Business-Start-up-Ideas-Comprehensive-successful/dp/1495261840/"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button appbook = (Button)findViewById(R.id.appbook);
+        appbook.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Mobile-App-Marketing-Monetization-downloads/dp/1502383829"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button card = (Button)findViewById(R.id.card);
+        card.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Business-Card-Marketing-Networking-ebook/dp/B018BD6T02"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button flier = (Button)findViewById(R.id.flier);
+        flier.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Flier-Marketing-Flyers-Promote-Business-ebook/dp/B018HU86SM"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button twitter = (Button)findViewById(R.id.twitter);
+        twitter.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Advanced-Twitter-Marketing-Automation-strategies-ebook/dp/B017T1T4FO"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+
+
+
+
+
+
+        Button facebook = (Button)findViewById(R.id.facebook);
+        facebook.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Facebook-Marketing-Business-Expect-Promoting-ebook/dp/B00LMGPDIK"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button strategiesbook = (Button)findViewById(R.id.strategiesbook);
+        strategiesbook.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Marketing-Advertising-Strategy-Reach-People/dp/1495453588"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+
+
+//
+        Button businessplan = (Button)findViewById(R.id.businessplan);
+        businessplan.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Business-plan-template-example-business-ebook/dp/B0193L53IU"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button marketingplan = (Button)findViewById(R.id.marketingplan);
+        marketingplan.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Marketing-Plan-Template-Example-marketing/dp/1519712952"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+        Button amznauthor = (Button)findViewById(R.id.amznauthor);
+        amznauthor.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.amazon.com/Alex-Genadinik/e/B00I114WEU"));
+
+                startActivity(browserIntent);
+            }
+        });
            
 	}
 	

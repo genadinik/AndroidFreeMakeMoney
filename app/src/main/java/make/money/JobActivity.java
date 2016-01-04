@@ -43,18 +43,18 @@ public class JobActivity extends BaseActivity
 //	        }
 //	    });	    
 	    
-	    Button eresume = (Button)findViewById(R.id.eresume);          
-	    eresume.setOnClickListener(new Button.OnClickListener() 
-	    {  
-	        public void onClick(View v) 
-	        {	      
-            	
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
-              		  Uri.parse("http://traktum.com/?a=66786&c=213962&s1="));
-                startActivity(browserIntent);
-	        	
-	        }
-	    });	    	    
+//	    Button eresume = (Button)findViewById(R.id.eresume);
+//	    eresume.setOnClickListener(new Button.OnClickListener()
+//	    {
+//	        public void onClick(View v)
+//	        {
+//
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+//              		  Uri.parse("http://traktum.com/?a=66786&c=213962&s1="));
+//                startActivity(browserIntent);
+//
+//	        }
+//	    });
 	    
     
 //	    Button biz_app = (Button)findViewById(R.id.biz_app);          

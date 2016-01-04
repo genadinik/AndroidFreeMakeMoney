@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <include android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5px">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5px"
+            >
+
+
+            <TextView
+                android:id="@+id/heading_subscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="GET PREMIUM BUSINESS HELP WITH MY 15+ BUSINESS BOOKS, 70+ COURSES AND 1-ON-1 COACHING"
+                />
+
+            <TextView
+                android:id="@+id/explanation_books"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="If you like the written tutorials on this app, and you like learning by reading, you can get much more help with my books about entrepreneurship, business and marketing."
+                />
+
+            <Button
+                android:id="@+id/books"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Get help with my business books"
+                />
+
+
+            <TextView
+                android:id="@+id/explanation_courses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="If you like the video tutorials on this app, and you like learning by watching video, you can get much more help with my video-based online courses on entrepreneurship, business and marketing."
+                />
+
+            <Button
+                android:id="@+id/courses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Business courses"
+                />
+
+
+            <TextView
+                android:id="@+id/explanation_coaching"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="If you prefer to discuss your business and get personalized 1-on-1 help, you can do that as well."
+                />
+
+            <Button
+                android:id="@+id/coaching"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Learn how you can get discounted 1-on-1 coaching"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

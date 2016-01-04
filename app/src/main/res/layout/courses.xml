@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <include android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5px">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5px"
+            >
+
+
+            <TextView
+                android:id="@+id/heading_subscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="GET MORE HELP WITH BUSINESS AND MARKETING ONLINE COURSES"
+                />
+
+            <TextView
+                android:id="@+id/explanation_books"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="Courses are great because they are all video which means that you will get through them much faster, and will be able to implement the advice in the courses faster too."
+                />
+
+            <Button
+                android:id="@+id/niche"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="How to find your business niche"
+                />
+
+            <Button
+                android:id="@+id/businessplan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="How to write a business plan"
+                />
+
+            <Button
+                android:id="@+id/startbusiness"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="How to start a business"
+                />
+
+            <Button
+                android:id="@+id/appbook"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Learn to succeed in the mobile app business"
+                />
+
+
+            <TextView
+                android:id="@+id/promoting_heading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="PROMOTING YOUR BUSINESS"
+                />
+
+            <TextView
+                android:id="@+id/explanation_courses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="When most people start a business, they say that they will promote their businesses with Flyers, business cards, Twitter and Facebook. If that sounds like your strategy, here are those 4 books for you:"
+                />
+
+            <Button
+                android:id="@+id/card"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Business card marketing and networking"
+                />
+
+            <Button
+                android:id="@+id/flier"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Flier marketing"
+                />
+
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Twitter marketing"
+                />
+
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Facebook marketing"
+                />
+
+            <Button
+                android:id="@+id/strategiesbook"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Marketing strategies to reach 1,000,000 people"
+                />
+
+
+            <Button
+                android:id="@+id/marketingplan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="How to write a marketing plan"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="spannable" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

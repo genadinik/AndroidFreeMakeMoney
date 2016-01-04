@@ -27,9 +27,9 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"  
-    android:text="Take a look at some of these websites and browse for jobs there. You can make money and save towards the things you need by simply getting a job.
+    android:text="Browse a jobs website and take a look at some of the jobs out there. You can make money and save towards the things you need by simply getting a job.
     
-\n\nUnited States residents can browse thousands of relevant full-time and part-time jobs from across more than 25 industries at the Beyond.com career network. We are working on adding job sites from other countries. "       
+\n\nUnited States residents can browse thousands of relevant full-time and part-time jobs from across more than 25 industries at the Beyond.com career network. I am working on adding job sites from other countries. "
     />
 
 
@@ -59,7 +59,8 @@
     style="@style/home_page_buttons"    
     /> 	
 	 -->
-	 
+
+            <!--
 <TextView
 	android:id="@+id/heading_2"
     android:layout_width="fill_parent"
@@ -84,7 +85,8 @@
 	    android:padding="10px"
 	    style="@style/home_page_buttons"  	    
 	    android:layout_width="fill_parent">  
-	</Button> 	
+	</Button>
+	 	-->
 	<!-- 
 <TextView
 	android:id="@+id/heading_1"    

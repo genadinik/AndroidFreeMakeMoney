@@ -109,7 +109,7 @@
     android:id="@+id/start_business_prompt"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Learn to start a business"
+    android:text="Get Amazing Premium Help"
     android:textSize="17sp"
     android:textStyle="bold"
     android:textColor="@color/white"
@@ -122,10 +122,19 @@
     android:layout_height="fill_parent"
     android:layout_marginTop ="5dp"
     style="@style/home_page_buttons" 
-    android:text="Take Our 4-App Business Course"
-    />    
-    
-<TextView
+    android:text="Take My 4-App Business Course"
+    />
+
+    <Button
+        android:id="@+id/premium_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop ="5dp"
+        style="@style/home_page_buttons"
+        android:text="Coaching, Online Courses And Books"
+        />
+
+    <TextView
     android:id="@+id/fundraising_guides"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -200,7 +209,7 @@ android:layout_marginRight="10dp"
     />          
         
 </LinearLayout>                
-    
+    <!--
 <TextView
     android:id="@+id/books_prompt"
     android:layout_width="fill_parent"
@@ -219,7 +228,8 @@ android:layout_marginRight="10dp"
     android:layout_marginTop ="5dp"
     style="@style/home_page_buttons" 
     android:text="Books Based On Our Apps"
-    />       
+    />
+    -->
 
 <TextView
     android:id="@+id/plan_prompt" 

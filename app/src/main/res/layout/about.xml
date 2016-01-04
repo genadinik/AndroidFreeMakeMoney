@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <include android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5px">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5px"
+            >
+
+
+            <TextView
+                android:id="@+id/heading_subscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="HELLO! MY NAME IS ALEX GENADINIK, 3-TIME BEST SELLING AMAZON AUTHOR, SUCCESSFUL ENTREPRENEUR, CREATOR OF THIS APP"
+                />
+
+            <TextView
+                android:id="@+id/explanation_books"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="Nice to meet you, and thank you for spending time with this app that I built for you. I want to extend a VERY WARM WELCOME TO YOU.
+
+               \n\nI hope your experience with this app proves to be delightful and that the app will help you plan and start your business the right way.
+
+               \n\nNow let me tell you a little bit about me and my areas of expertise:
+
+               \n\n*Business strategy, advanced marketing and business growth strategies, business planning and mobile apps.
+               \n\n*I have coached over 1,000 people on planning, starting and growing their businesses.
+               \n\n*I am an author of 18 business and marketing books (see below).
+               \n\n*I am an online teacher with over 70 business and marketing courses (see below).
+               \n\n*I am a creator of a series of mobile apps that have a combinded 1,000,000+ downloads.
+               \n\n*I love helping entrepreneurs succeed, and I look forward to helping you!"
+                />
+
+            <Button
+                android:id="@+id/books"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="See my Amazon author profile and browse all my books"
+                />
+
+
+            <Button
+                android:id="@+id/courses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Browse my business courses"
+                />
+
+
+            <TextView
+                android:id="@+id/explanation_coaching"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="You can get 90% OFF any of my courses by using the coupon code: androidapp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

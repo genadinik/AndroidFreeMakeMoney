@@ -178,8 +178,24 @@
 
 			<activity
             android:name=".MotivationActivity"
-            android:label="Join Our Entrepreneur Community!" />										
-			
+            android:label="Join Our Entrepreneur Community!" />
+
+        <activity
+            android:name=".PremiumActivity"
+            android:label="Additional Ways To Learn About Fundraising And Business" />
+
+        <activity
+            android:name=".CoursesActivity"
+            android:label="Business And Marketing Online Courses" />
+
+        <activity
+            android:name=".CoachingActivity"
+            android:label="Get Coaching Help With Business And Marketing" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="About The Creator Of The App And Your Potential Coach" />
+
 			<activity
             android:name=".YoutubeActivity"
              />								

@@ -92,13 +92,13 @@ public class MainActivity extends BaseActivity
         Button plan_fundraising = (Button)findViewById(R.id.plan_fundraising); 
         Button more_apps_button = (Button)findViewById(R.id.more_apps_button); 
         Button get_investment = (Button)findViewById(R.id.get_investment); 
-        //Button business_ideas = (Button)findViewById(R.id.business_ideas);
+        Button premium_button = (Button)findViewById(R.id.premium_button);
         Button video_button = (Button)findViewById(R.id.video_button);
         Button support_app = (Button)findViewById(R.id.support_app);
         Button job = (Button)findViewById(R.id.job);
         Button financial_resources = (Button)findViewById(R.id.financial_resources);
         Button money_online = (Button)findViewById(R.id.money_online);
-        Button books = (Button)findViewById(R.id.books);
+        //Button books = (Button)findViewById(R.id.books);
         Button community = (Button)findViewById(R.id.community);
         
 
@@ -111,14 +111,14 @@ public class MainActivity extends BaseActivity
             }
         });                         
         
-        books.setOnClickListener(new Button.OnClickListener() 
-        {  
-            public void onClick(View v) 
-            {            	
-                Intent myIntent = new Intent(MainActivity.this, BooksActivity.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });                 
+//        books.setOnClickListener(new Button.OnClickListener()
+//        {
+//            public void onClick(View v)
+//            {
+//                Intent myIntent = new Intent(MainActivity.this, BooksActivity.class);
+//                MainActivity.this.startActivity(myIntent);
+//            }
+//        });
         
         
         money_online.setOnClickListener(new Button.OnClickListener() 
@@ -169,17 +169,17 @@ public class MainActivity extends BaseActivity
               Intent myIntent = new Intent(MainActivity.this, VideoChannelActivity.class);
               MainActivity.this.startActivity(myIntent);
             }
-        });                   
-        
-//        business_ideas.setOnClickListener(new Button.OnClickListener()
-//        {
-//            @Override
-//			public void onClick(View v)
-//            {
-//              Intent myIntent = new Intent(MainActivity.this, BusinessIdeasActivity.class);
-//              MainActivity.this.startActivity(myIntent);
-//            }
-//        });
+        });
+
+        premium_button.setOnClickListener(new Button.OnClickListener()
+        {
+            @Override
+			public void onClick(View v)
+            {
+              Intent myIntent = new Intent(MainActivity.this, PremiumActivity.class);
+              MainActivity.this.startActivity(myIntent);
+            }
+        });
         
         get_investment.setOnClickListener(new Button.OnClickListener() 
         {  

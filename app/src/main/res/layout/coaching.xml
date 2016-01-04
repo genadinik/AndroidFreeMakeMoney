@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <include android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5px">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5px"
+            >
+
+
+            <TextView
+                android:id="@+id/heading_subscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="PREMIUM HELP: GET HELP WITH 1-ON-1 BUSINESS COACHING"
+                />
+
+            <TextView
+                android:id="@+id/explanation_books"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="Getting one-on-one personlized expert coaching is the best way to get business help. During our coaching we will have a real conversation over Skype, and you will get all your business questions answered, and get great guidance on an ongoing basis.
+
+            \n\n"
+                />
+
+            <Button
+                android:id="@+id/coachingskype"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Affordable Way To Get Coaching With Me Via Skype"
+                />
+
+            <Button
+                android:id="@+id/coachingask"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Get Help Via Chat On This App"
+                />
+
+            <Button
+                android:id="@+id/me"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Learn about me, the coach"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="spannable" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
