@@ -22,43 +22,43 @@ public class ExtraHelpActivity extends BaseActivity
 	       	Button marketing_app = (Button)findViewById(R.id.marketing_app); 
 	       	Button fundraising_app = (Button)findViewById(R.id.fundraising_app); 
 	        
-	       	Button free_plan_app = (Button)findViewById(R.id.free_plan_app); 
-	       	Button free_ideas_app = (Button)findViewById(R.id.free_ideas_app);
-			Button free_marketing_app = (Button)findViewById(R.id.free_marketing_app);
+//	       	Button free_plan_app = (Button)findViewById(R.id.free_plan_app);
+//	       	Button free_ideas_app = (Button)findViewById(R.id.free_ideas_app);
+//			Button free_marketing_app = (Button)findViewById(R.id.free_marketing_app);
 
 	       	
-	       	free_plan_app.setOnClickListener(new Button.OnClickListener() 
-	        {  
-	            @Override
-				public void onClick(View v) 
-	            {            	
-	                Intent intent = new Intent(Intent.ACTION_VIEW);
-	            	intent.setData(Uri.parse("market://details?id=com.problemio"));
-	            	startActivity(intent);
-	            }
-	        });         
-	       	
-	       	free_ideas_app.setOnClickListener(new Button.OnClickListener() 
-	        {  
-	            @Override
-				public void onClick(View v) 
-	            {            	
-	                Intent intent = new Intent(Intent.ACTION_VIEW);
-	            	intent.setData(Uri.parse("market://details?id=business.ideas"));
-	            	startActivity(intent);
-	            }
-	        });
-
-			free_marketing_app.setOnClickListener(new Button.OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					Intent intent = new Intent(Intent.ACTION_VIEW);
-					intent.setData(Uri.parse("market://details?id=com.marketing"));
-					startActivity(intent);
-				}
-			});
+//	       	free_plan_app.setOnClickListener(new Button.OnClickListener()
+//	        {
+//	            @Override
+//				public void onClick(View v)
+//	            {
+//	                Intent intent = new Intent(Intent.ACTION_VIEW);
+//	            	intent.setData(Uri.parse("market://details?id=com.problemio"));
+//	            	startActivity(intent);
+//	            }
+//	        });
+//
+//	       	free_ideas_app.setOnClickListener(new Button.OnClickListener()
+//	        {
+//	            @Override
+//				public void onClick(View v)
+//	            {
+//	                Intent intent = new Intent(Intent.ACTION_VIEW);
+//	            	intent.setData(Uri.parse("market://details?id=business.ideas"));
+//	            	startActivity(intent);
+//	            }
+//	        });
+//
+//			free_marketing_app.setOnClickListener(new Button.OnClickListener()
+//			{
+//				@Override
+//				public void onClick(View v)
+//				{
+//					Intent intent = new Intent(Intent.ACTION_VIEW);
+//					intent.setData(Uri.parse("market://details?id=com.marketing"));
+//					startActivity(intent);
+//				}
+//			});
 
 	       	fundraising_app.setOnClickListener(new Button.OnClickListener() 
 	        {  

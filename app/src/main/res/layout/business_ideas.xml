@@ -79,7 +79,7 @@
     /> 
     
         <TextView
-    android:id="@+id/more_text" 
+    android:id="@+id/more_text1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="iPoll offers an amazing way to generate extra cash right from your own home! You can sign up and begin taking polls and surveys, and making money today!"
@@ -97,7 +97,7 @@
     />              
     	   
 <TextView
-	android:id="@+id/page_exlain"    
+	android:id="@+id/page_exlain1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="NOW THE BUSINESS IDEAS"

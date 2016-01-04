@@ -42,7 +42,7 @@
 
 
 <TextView
-	android:id="@+id/heading_1"    
+	android:id="@+id/heading_11"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="THINGS TO DO"

@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import android.content.pm.PackageManager;
+import android.content.Context;
+
 
 public class WebsiteSetupActivity extends BaseActivity
 {
@@ -97,18 +100,7 @@ public class WebsiteSetupActivity extends BaseActivity
 	                 }
 	        	 }           	            	
 	        }
-	      });	 	     	    	      	    
-
-	      
-//	      Button share = (Button)findViewById(R.id.share_button); 
-//	      share.setOnClickListener(new Button.OnClickListener() 
-//	      {  
-//	          public void onClick(View v) 
-//	          {		        	
-//	          	openOptionsMenu();        	
-//	          }
-//	      });
-	      
+	      });
 
 	      
 	      
@@ -120,10 +112,23 @@ public class WebsiteSetupActivity extends BaseActivity
             {	            	            	
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
               		  Uri.parse("http://www.kqzyfj.com/click-7252177-10383360"));
+
+				boolean isChromeInstalled = isPackageInstalled("com.android.chrome", WebsiteSetupActivity.this);
+				if (isChromeInstalled) {
+					browserIntent.setPackage("com.android.chrome");
+					startActivity(browserIntent);
+				}else{
+					Intent chooserIntent = Intent.createChooser(browserIntent, "Select Application");
+					startActivity(chooserIntent);
+				}
+
                 startActivity(browserIntent);
             }
         });
-	    
+
+
+
+
 //	  web_content_squarespace.setOnClickListener(new Button.OnClickListener() 
 //	  {  
 //	      public void onClick(View v) 
@@ -229,11 +234,19 @@ public class WebsiteSetupActivity extends BaseActivity
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
-    }   
-    
+    }
 
-    
-    @Override
+	private boolean isPackageInstalled(String packagename, Context context) {
+		PackageManager pm = context.getPackageManager();
+		try {
+			pm.getPackageInfo(packagename, PackageManager.GET_ACTIVITIES);
+			return true;
+		} catch (PackageManager.NameNotFoundException e) {
+			return false;
+		}
+	}
+
+	@Override
     protected void onStart()
     {
     	super.onStart();

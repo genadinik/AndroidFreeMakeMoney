@@ -69,7 +69,8 @@
     android:text="Sign In As a Different User"
     style="@style/home_page_buttons" 
     />
- 
+
+
     <Button
 	android:id="@+id/give_feedback"
     android:layout_width="fill_parent"

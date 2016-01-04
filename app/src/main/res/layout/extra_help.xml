@@ -16,7 +16,7 @@
          layout="@layout/header"/>
 
 
-
+<!--
 <TextView
 	android:id="@+id/heading_0"    
     android:layout_width="fill_parent"
@@ -59,13 +59,13 @@
                 android:layout_marginTop ="10dp"
                 style="@style/home_page_buttons"
                 />
-
+-->
 <TextView
 	android:id="@+id/heading_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_heading"   
-    android:text="GET MORE HELP WITH PREMIUM APPS"
+    android:text="GET ONE-ON-ONE HELP WITH PREMIUM APPS"
     />
 
 
