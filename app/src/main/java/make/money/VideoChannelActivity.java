@@ -21,26 +21,22 @@ public class VideoChannelActivity extends BaseActivity
 
 	    
 	    Button make_money_video = (Button)findViewById(R.id.make_money_video); 	    
-	    make_money_video.setOnClickListener(new Button.OnClickListener() 
-        {  
-            @Override
-			public void onClick(View v) 
-            {            	
-//              Intent myIntent = new Intent(VideoChannelActivity.this, MakeMoneyVideoActivity.class);
-//              VideoChannelActivity.this.startActivity(myIntent);
-            	
-	        	  // Add url_to_watch in local storage and go to video screen
-	      	    SharedPreferences prefs = 
-	      	    		PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
+	    make_money_video.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View v) {
 
-		        prefs.edit()        
-		        .putString("url_to_watch", "http://www.youtube.com/watch?v=eHZ1b6KSryk")
-		        .commit();
+				// Add url_to_watch in local storage and go to video screen
+				SharedPreferences prefs =
+						PreferenceManager.getDefaultSharedPreferences(VideoChannelActivity.this);
 
-	              Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
-	              VideoChannelActivity.this.startActivity(myIntent);            	
-            }
-        }); 
+				prefs.edit()
+						.putString("url_to_watch", "https://www.youtube.com/watch?v=XcIleEkezBY")
+						.commit();
+
+				Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
+				VideoChannelActivity.this.startActivity(myIntent);
+			}
+		});
         
 	      Button sub_button = (Button)findViewById(R.id.sub_button);
 	      sub_button.setOnClickListener(new Button.OnClickListener() 
@@ -61,10 +57,47 @@ public class VideoChannelActivity extends BaseActivity
 //	  	          		  Uri.parse("http://www.youtube.com/user/Okudjavavich"));
 //	  	            startActivity(browserIntent);
 	          }
-	      });	    
-	      
-	      
-	      
+	      });
+
+
+		Button fiverr = (Button)findViewById(R.id.fiverr);
+		fiverr.setOnClickListener(new Button.OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				SharedPreferences prefs =
+						PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
+
+				prefs.edit()
+						.putString("url_to_watch", "https://www.youtube.com/watch?v=GOU8Z44lPVA")
+						.commit();
+
+				Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
+				VideoChannelActivity.this.startActivity(myIntent);
+
+			}
+		});
+
+
+		Button affiliate = (Button)findViewById(R.id.affiliate);
+		affiliate.setOnClickListener(new Button.OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				// Add url_to_watch in local storage and go to video screen
+				SharedPreferences prefs =
+						PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
+
+				prefs.edit()
+						.putString("url_to_watch", "https://youtu.be/D2X9dvyTDhk")
+						.commit();
+
+				Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
+				VideoChannelActivity.this.startActivity(myIntent);
+			}
+		});
+
+
 	    	  
 		      Button recurring = (Button)findViewById(R.id.recurring);
 	          recurring.setOnClickListener(new Button.OnClickListener() 
@@ -171,7 +204,7 @@ public class VideoChannelActivity extends BaseActivity
 			      	    		PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
 
 				        prefs.edit()        
-				        .putString("url_to_watch", "http://youtu.be/0lGgUtF4JjU")
+				        .putString("url_to_watch", "https://www.youtube.com/watch?v=KGVgamPNPNY")
 				        .commit();
 
 			              Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
@@ -199,23 +232,23 @@ public class VideoChannelActivity extends BaseActivity
 				          }
 				      });
 					  
-					  Button freemium = (Button)findViewById(R.id.freemium);
-					  freemium.setOnClickListener(new Button.OnClickListener() 
-				      {  
-				          public void onClick(View v) 
-				          {	            	          	
-				        	  // Add url_to_watch in local storage and go to video screen
-				      	    SharedPreferences prefs = 
-				      	    		PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
-
-					        prefs.edit()        
-					        .putString("url_to_watch", "http://youtu.be/8IqWwNLHIsU")
-					        .commit();
-
-				              Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
-				              VideoChannelActivity.this.startActivity(myIntent);
-				          }
-				      });				      
+//					  Button freemium = (Button)findViewById(R.id.freemium);
+//					  freemium.setOnClickListener(new Button.OnClickListener()
+//				      {
+//				          public void onClick(View v)
+//				          {
+//				        	  // Add url_to_watch in local storage and go to video screen
+//				      	    SharedPreferences prefs =
+//				      	    		PreferenceManager.getDefaultSharedPreferences( VideoChannelActivity.this);
+//
+//					        prefs.edit()
+//					        .putString("url_to_watch", "http://youtu.be/8IqWwNLHIsU")
+//					        .commit();
+//
+//				              Intent myIntent = new Intent(VideoChannelActivity.this, YoutubeActivity.class);
+//				              VideoChannelActivity.this.startActivity(myIntent);
+//				          }
+//				      });
 				      
 				    	  
 					  

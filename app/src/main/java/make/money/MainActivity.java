@@ -92,7 +92,7 @@ public class MainActivity extends BaseActivity
         Button plan_fundraising = (Button)findViewById(R.id.plan_fundraising); 
         Button more_apps_button = (Button)findViewById(R.id.more_apps_button); 
         Button get_investment = (Button)findViewById(R.id.get_investment); 
-        Button business_ideas = (Button)findViewById(R.id.business_ideas);
+        //Button business_ideas = (Button)findViewById(R.id.business_ideas);
         Button video_button = (Button)findViewById(R.id.video_button);
         Button support_app = (Button)findViewById(R.id.support_app);
         Button job = (Button)findViewById(R.id.job);
@@ -171,15 +171,15 @@ public class MainActivity extends BaseActivity
             }
         });                   
         
-        business_ideas.setOnClickListener(new Button.OnClickListener() 
-        {  
-            @Override
-			public void onClick(View v) 
-            {            	
-              Intent myIntent = new Intent(MainActivity.this, BusinessIdeasActivity.class);
-              MainActivity.this.startActivity(myIntent);
-            }
-        });           
+//        business_ideas.setOnClickListener(new Button.OnClickListener()
+//        {
+//            @Override
+//			public void onClick(View v)
+//            {
+//              Intent myIntent = new Intent(MainActivity.this, BusinessIdeasActivity.class);
+//              MainActivity.this.startActivity(myIntent);
+//            }
+//        });
         
         get_investment.setOnClickListener(new Button.OnClickListener() 
         {  
@@ -853,9 +853,9 @@ public class MainActivity extends BaseActivity
     
 
     
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.activity_main, menu);
+//        return true;
+//    }
 }

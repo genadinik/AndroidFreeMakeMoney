@@ -28,7 +28,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     style="@style/instruction_text"  
-    android:text="Our YouTube channel has 400+ videos about raising money, making money, starting a business, and marketing your business. We post a new video every day! So check for a new video each day, and learn more about busienss every day! "       
+    android:text="My YouTube channel has 500+ videos about raising money, making money, starting a business, and marketing your business. I often post new videos so subscribe to the YouTube channel, check for new videos often, and learn more about busienss! "
     />
   
 
@@ -36,7 +36,7 @@
 	android:id="@+id/sub_button"        
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Subscribe To Our YouTube Business Channel And Come Back For New Videos Daily!"
+    android:text="Subscribe To My YouTube Business Channel"
     android:layout_marginTop ="10dp"    
     style="@style/home_page_buttons"
     />
@@ -48,13 +48,13 @@
     style="@style/instruction_text"  
     android:text="NOTE: Due to different Android hardware, some devices may not be able to play video.
     
-\n\nIf the videos do not load for you, find all our videos on our YouTube channel at: 
+\n\nIf the videos do not load for you, find all my videos on my YouTube channel at:
 \nhttp://www.youtube.com/user/Okudjavavich"       
     />
 
 
 <TextView
-	android:id="@+id/microloans_header"    
+	android:id="@+id/microloans_header1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="FEW HANDPICKED VIDEOS ABOUT FUNDRAISING AND MAKING MONEY"
@@ -65,19 +65,45 @@
 	android:id="@+id/make_money_video"        
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Watch video on making money"
+    android:text="50 Ways To Make Money Online"
     android:padding="10px"
     style="@style/home_page_buttons"  
     />
-    
-<Button
-	android:id="@+id/creative"        
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Creative ways to raise money"
-    android:padding="10px"
-    style="@style/home_page_buttons"  
-    />
+
+            <Button
+                android:id="@+id/affiliate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Make Money With Affiliate Marketing"
+                android:padding="10px"
+                style="@style/home_page_buttons"
+                />
+
+            <Button
+                android:id="@+id/fiverr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="How To Make Money On Fiverr"
+                android:padding="10px"
+                style="@style/home_page_buttons"
+                />
+
+            <TextView
+                android:id="@+id/microloans_header2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FUNDRAISING VIDEOS"
+                style="@style/instruction_heading"
+                />
+
+            <Button
+                android:id="@+id/ideas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="15 Fundraising Ideas"
+                android:padding="10px"
+                style="@style/home_page_buttons"
+                />
 
 <Button
 	android:id="@+id/crowdfunding"        
@@ -97,14 +123,7 @@
     style="@style/home_page_buttons"  
     />
 
-<Button
-	android:id="@+id/ideas"        
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Fundraising ideas"
-    android:padding="10px"
-    style="@style/home_page_buttons"  
-    />
+
 
 <Button
 	android:id="@+id/loans"        
@@ -141,14 +160,16 @@
     style="@style/home_page_buttons"  
     />
 
-<Button
-	android:id="@+id/freemium"        
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="The freemium business model explained"
-    android:padding="10px"
-    style="@style/home_page_buttons"  
-    />
+            <Button
+                android:id="@+id/creative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Creative ways to raise money"
+                android:padding="10px"
+                style="@style/home_page_buttons"
+                />
+
+
 
 
 <!-- 

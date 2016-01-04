@@ -21,7 +21,7 @@
     <include android:id="@+id/header"
          layout="@layout/header"/>  
    
-    
+   <!--
  <TextView
     android:id="@+id/ask_question_prompt" 
     android:layout_width="fill_parent"
@@ -42,14 +42,14 @@
     style="@style/home_page_buttons" 
     android:text="100 Basic Business Ideas To Make Money"
     />    
- 
+-->
 
      
  <TextView
     android:id="@+id/video_prompt" 
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Videos about making money"
+    android:text="Videos about making and raising money"
     android:textSize="17sp"
     android:textStyle="bold"
     android:textColor="@color/white"
