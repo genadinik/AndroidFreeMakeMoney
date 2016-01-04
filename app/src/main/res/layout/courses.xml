@@ -151,7 +151,31 @@
                 />
 
 
+            <TextView
+                android:id="@+id/all_heading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_best_blue"
+                android:text="BROWSE ALL 70+ OF MY BUSINESS AND MARKETING COURSES AND GET DISCOUNTS"
+                />
 
+            <TextView
+                android:id="@+id/all_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="5dp"
+                style="@style/instruction_text"
+                android:text="I created many online business and marketing courses that can truly propel your business forward and help you learn how to create a successful business much faster than you would on your own, and users of my apps can get any of them for 90% OFF by using discount code: androidapp"
+                />
+
+            <Button
+                android:id="@+id/allcourses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop ="5dp"
+                style="@style/home_page_buttons"
+                android:text="Browse all my online courses"
+                />
 
             <TextView
                 android:id="@+id/log"

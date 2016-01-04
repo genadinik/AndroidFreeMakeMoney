@@ -26,7 +26,7 @@ public class CoachingActivity extends BaseActivity
     Button coachingask = (Button)findViewById(R.id.coachingask);
     coachingask.setOnClickListener(new Button.OnClickListener() {
         public void onClick(View v) {
-            Intent myIntent = new Intent(CoachingActivity.this, MyQuestionsActivity.class);
+            Intent myIntent = new Intent(CoachingActivity.this, ExtraHelpActivity.class);
             CoachingActivity.this.startActivity(myIntent);
         }
     });

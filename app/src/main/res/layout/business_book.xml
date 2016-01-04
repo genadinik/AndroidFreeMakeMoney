@@ -165,7 +165,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/light_best_blue"
-                android:text="SEE MY FULL AMAZON AUTHOR PAGE WITH 18 BOOKS"
+                android:text="BROWSE ALL 15+ OF MY BOOKS ON AMAZON"
                 />
 
             <Button

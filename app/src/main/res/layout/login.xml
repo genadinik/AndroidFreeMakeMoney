@@ -20,8 +20,16 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        >  
-        
+        >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_best_blue"
+        android:text="SOME TASKS ON THE APP REQUIRE YOU TO BE LOGGED IN"
+        />
+
 <TextView
 	android:id="@+id/email_ask"    
     android:layout_width="fill_parent"

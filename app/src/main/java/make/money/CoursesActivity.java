@@ -132,6 +132,18 @@ public class CoursesActivity extends BaseActivity
                 startActivity(browserIntent);
             }
         });
+
+        Button allcourses = (Button)findViewById(R.id.allcourses);
+        allcourses.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.udemy.com/user/alexgenadinik/?key=taught_courses&taught_courses=6"));
+
+                startActivity(browserIntent);
+            }
+        });
+
+
         //
         //
         // https://www.udemy.com/startup-small-business-law-business-registration/?couponCode=androidapp
