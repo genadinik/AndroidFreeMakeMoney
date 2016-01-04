@@ -89,7 +89,7 @@
     android:id="@+id/job_prompt" 
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Browse possible job opportunities"
+    android:text="In case a job might help you"
     android:textSize="17sp"
     android:layout_marginLeft="15dp"
     android:textColor="@color/white"
@@ -103,9 +103,65 @@
     android:layout_marginTop ="5dp"
     style="@style/home_page_buttons" 
     android:text="Make Money Through Finding A Job"
-    />         
-     
-<TextView
+    />
+
+    <TextView
+        android:id="@+id/youtube_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:text="More Of My Free Apps To Help You"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <Button
+            android:id="@+id/plan"
+            android:layout_marginTop ="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            style="@style/home_page_two_buttons"
+            android:text="Business Plan"
+            />
+
+        <Button
+            android:id="@+id/marketing"
+            android:layout_marginTop ="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/home_page_two_buttons"
+            android:textSize="10dp"
+            android:text="Marketing"
+            />
+
+
+
+        <Button
+            android:id="@+id/ideas"
+            android:layout_marginTop ="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            style="@style/home_page_two_buttons"
+            android:text="Business Ideas"
+            />
+
+    </LinearLayout>
+
+    <TextView
     android:id="@+id/start_business_prompt"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -152,84 +208,7 @@
     android:layout_marginTop ="5dp"
     style="@style/home_page_buttons" 
     android:text="Fundraising Overview"
-    />    
-    
-<TextView
-	android:id="@+id/youtube_prompt"    
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:textColor="@color/white"
-    android:layout_marginLeft="15dp"
-    android:text="More Of Our Free Apps"    
-    android:textSize="17sp"
-    android:textStyle="bold"
-    />       
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="fill_parent" 
-android:layout_height="wrap_content"
- android:orientation="horizontal"
- android:layout_marginLeft="10dp"
-android:layout_marginRight="10dp"
-> 
-
-        <Button
-	android:id="@+id/plan"
-	android:layout_marginTop ="5dp"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:textSize="10dp"
-    style="@style/home_page_two_buttons" 
-    android:text="Business Plan"
-    />       
-    
-    <Button
-	android:id="@+id/marketing"
-	android:layout_marginTop ="5dp"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    style="@style/home_page_two_buttons"
-    android:textSize="10dp" 
-    android:text="Marketing"
     />
-    
- 
-
-        <Button
-	android:id="@+id/ideas"
-	android:layout_marginTop ="5dp"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:textSize="10dp"
-    style="@style/home_page_two_buttons" 
-    android:text="Business Ideas"
-    />          
-        
-</LinearLayout>                
-    <!--
-<TextView
-    android:id="@+id/books_prompt"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Books inspired by this app series"
-    android:textSize="17sp"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:layout_marginLeft="15dp"
-    />    
-    
-    <Button
-	android:id="@+id/books"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_marginTop ="5dp"
-    style="@style/home_page_buttons" 
-    android:text="Books Based On Our Apps"
-    />
-    -->
 
 <TextView
     android:id="@+id/plan_prompt" 
