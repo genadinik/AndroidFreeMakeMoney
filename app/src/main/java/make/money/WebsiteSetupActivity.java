@@ -111,7 +111,7 @@ public class WebsiteSetupActivity extends BaseActivity
             public void onClick(View v) 
             {	            	            	
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
-              		  Uri.parse("http://www.kqzyfj.com/click-7252177-10383360"));
+              		  Uri.parse("http://www.bluehost.com/track/businessplan/"));
 
 				boolean isChromeInstalled = isPackageInstalled("com.android.chrome", WebsiteSetupActivity.this);
 				if (isChromeInstalled) {
