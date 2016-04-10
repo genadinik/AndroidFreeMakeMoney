@@ -11,6 +11,12 @@ import android.widget.Button;
 import android.content.pm.PackageManager;
 import android.content.Context;
 
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
 
 public class WebsiteSetupActivity extends BaseActivity
 {
@@ -230,7 +236,7 @@ public class WebsiteSetupActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -256,6 +262,26 @@ public class WebsiteSetupActivity extends BaseActivity
     protected void onStop()
     {
     	super.onStop();		
-    }   
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
     
 }

@@ -1,13 +1,10 @@
 package make.money;
 
 import java.io.InputStream;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-
-
-import com.flurry.android.FlurryAgent;
-
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import utils.SendEmail;
 import android.content.Intent;
@@ -15,6 +12,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 /**
@@ -35,7 +36,6 @@ public class PremiumActivity extends BaseActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        FlurryAgent.onStartSession(this, "8CA5LTZ5M73EG8R35SXG");
 
         setContentView(R.layout.premium);
 
@@ -79,7 +79,7 @@ public class PremiumActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);
@@ -89,13 +89,12 @@ public class PremiumActivity extends BaseActivity
     public void onStop()
     {
         super.onStop();
-        FlurryAgent.onEndSession(this);
         // your code
     }
 
     public void sendFeedback( String name , String email , String phone )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/professional_help.php",
+        String[] params = new String[] { "https://www.problemio.com/problems/professional_help.php",
                 name , email , phone };
 
         DownloadPageTask task = new DownloadPageTask();
@@ -126,7 +125,7 @@ public class PremiumActivity extends BaseActivity
 
                 final URL url = new URL( myUrl + "?" + query );
 
-                final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 
                 conn.setDoOutput(true);
                 conn.setRequestMethod("POST");
@@ -154,5 +153,25 @@ public class PremiumActivity extends BaseActivity
             return response;
         }
 
+    }
+
+    TrustManager tm = new X509TrustManager()  {
+        public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+    };
+
+    public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        try {
+            chain[0].checkValidity();
+        } catch (Exception e) {
+            throw new CertificateException("Certificate not valid or trusted.");
+        }
     }
 }

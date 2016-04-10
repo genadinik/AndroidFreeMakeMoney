@@ -18,27 +18,30 @@ import android.util.Log;
 import android.widget.Toast;
 
 
-import com.google.android.gcm.GCMBaseIntentService;
+//import com.google.android.gcm.GCMBaseIntentService;
 
-public class GCMIntentService extends GCMBaseIntentService
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+public class GCMIntentService //extends GCMBaseIntentService
 {
 	public GCMIntentService() 
 	{
-		    super(MainActivity.SENDER_ID);
+		  //  super(MainActivity.SENDER_ID);
 	}
 	
-	@Override
-	  protected void onRegistered(Context ctxt, String regId) {
-	    Log.d(getClass().getSimpleName(), "onRegistered: " + regId);
-	    Toast.makeText(this, regId, Toast.LENGTH_LONG).show();
-	  }
+//	@Override
+//	  protected void onRegistered(Context ctxt, String regId) {
+//	  }
+//
+//	  @Override
+//	  protected void onUnregistered(Context ctxt, String regId) {
+//	  }
 
-	  @Override
-	  protected void onUnregistered(Context ctxt, String regId) {
-	    Log.d(getClass().getSimpleName(), "onUnregistered: " + regId);
-	  }
-
-	  @Override
+	 // @Override
 	  protected void onMessage(Context ctxt, Intent message) 
 	  {
 	    Bundle extras=message.getExtras();
@@ -47,9 +50,9 @@ public class GCMIntentService extends GCMBaseIntentService
 	    {
 	    	//sendEmail( "Key: " + key , "value: " + extras.getString(key) );
 	    	
-	      Log.d(getClass().getSimpleName(),
-	            String.format("onMessage: %s=%s", key,
-	                          extras.getString(key)));
+//	      Log.d(getClass().getSimpleName(),
+//	            String.format("onMessage: %s=%s", key,
+//	                          extras.getString(key)));
 	    }
 	    
 	    try
@@ -60,12 +63,12 @@ public class GCMIntentService extends GCMBaseIntentService
 		    	String question_id = extras.getString("question_id");
 		    	String recent_question = extras.getString("question");
 
-		    	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences( this );
-			    
-			    prefs.edit()        
-		        .putString("recent_question_id", question_id)
-		        .putString("recent_question", recent_question)
-		        .commit();		    		
+//		    	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences( this );
+//
+//			    prefs.edit()
+//		        .putString("recent_question_id", question_id)
+//		        .putString("recent_question", recent_question)
+//		        .commit();
 	    	}
 	    	else
 	    	if ( notification_type != null && notification_type.equals("plan"))
@@ -80,13 +83,13 @@ public class GCMIntentService extends GCMBaseIntentService
 //				$t_data['topic_id'] = $topic_id;
 //				$t_data['topic_name'] = $section_name;
 		    	
-		    	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences( this );
-		    	
-			    prefs.edit()        
-		        .putString("recent_problem_id", recent_problem_id)
-		        .putString("recent_topic_id", recent_topic_id)
-		        .putString("recent_topic_name", recent_topic_name)
-		        .commit();		    	
+//		    	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences( this );
+//
+//			    prefs.edit()
+//		        .putString("recent_problem_id", recent_problem_id)
+//		        .putString("recent_topic_id", recent_topic_id)
+//		        .putString("recent_topic_name", recent_topic_name)
+//		        .commit();
 	    	}
 	    	
 	    	generateNotification(ctxt, extras.getString("message"), "New Message" ,  extras);
@@ -102,23 +105,21 @@ public class GCMIntentService extends GCMBaseIntentService
 	    // Subject , body
 	    public void sendEmail( String subject , String body )
 	    {
-	        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+	        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
 	        SendEmail task = new SendEmail();
 	        task.execute(params);            	
 	    }    
 	  
-	  @Override
-	  protected void onError(Context ctxt, String errorMsg) {
-	    Log.d(getClass().getSimpleName(), "onError: " + errorMsg);
-	  }
-
-	  @Override
-	  protected boolean onRecoverableError(Context ctxt, String errorMsg) {
-	    Log.d(getClass().getSimpleName(), "onRecoverableError: " + errorMsg);
-	    
-	    return(true);
-	  }	
+//	  @Override
+//	  protected void onError(Context ctxt, String errorMsg) {
+//	  }
+//
+//	  @Override
+//	  protected boolean onRecoverableError(Context ctxt, String errorMsg) {
+//
+//	    return(true);
+//	  }
 	  
 	  private static void generateNotification(Context context, String message, String title ,
 			  Bundle extras ) 
@@ -160,5 +161,25 @@ public class GCMIntentService extends GCMBaseIntentService
 	         .build();
 
 	        notificationManager.notify(0, notification);
-	}	  
+	}
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

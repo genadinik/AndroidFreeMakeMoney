@@ -1,6 +1,8 @@
 package make.money;
 
 import java.lang.reflect.InvocationTargetException;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import utils.SendEmail;
 import android.app.Activity;
@@ -16,6 +18,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.WebSettings.PluginState;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 public class YoutubeActivity extends Activity
@@ -281,7 +286,7 @@ public class YoutubeActivity extends Activity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -324,11 +329,10 @@ public class YoutubeActivity extends Activity
 	                }
 	            })	            
 	            .setPositiveButton("NO", new DialogInterface.OnClickListener() {
-	                public void onClick(DialogInterface dialog, int id) 
-	                {
-	                	dialog.cancel();                  
-	                }
-	            })
+					public void onClick(DialogInterface dialog, int id) {
+						dialog.cancel();
+					}
+				})
 ;
 	     AlertDialog alert = linkedin_builder.create();
 	     alert.show();				
@@ -339,5 +343,25 @@ public class YoutubeActivity extends Activity
     protected void onStart()
     {
     	super.onStart();
-    }    
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

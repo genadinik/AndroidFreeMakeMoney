@@ -4,12 +4,14 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.google.android.gcm.GCMRegistrar;
+//import com.google.android.gcm.GCMRegistrar;
 
 import utils.SendEmail;
 import android.content.Intent;
@@ -26,6 +28,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import data.QuestionComment;
 
@@ -61,35 +67,35 @@ public class QuestionActivity extends BaseListActivity
        
         
         
-        if ( android.os.Build.VERSION.SDK_INT >= 8 )
-        {
-	        GCMRegistrar.checkDevice(this);	
-	        GCMRegistrar.checkManifest(this);
-	    
-	        final String regId = GCMRegistrar.getRegistrationId(this);
-	        if (regId.equals("")) 
-	        {
-	        	// Automatically registers application on startup. 
-	        	GCMRegistrar.register(getApplicationContext(), SENDER_ID); 
-	        } 
-	        else 
-	        {	     
-	        	// Device is already registered on GCM, check server. 
-	        	if (GCMRegistrar.isRegisteredOnServer(getApplicationContext())) 
-	        	{ 
-	        		// Not sure what to do here :)
-	        	} 
-	        	else 
-	        	{
-			    	if ( user_id != null )
-			    	{	
-				        GCMRegistrar.register(this, SENDER_ID); // google register 
-			    		//GCMRegistrar.setRegisteredOnServer(this, true); //Tell GCM: this device is registered on my server	        
-				    	setRegistrationId ( user_id , regId );
-			    	}
-	        	}
-	        }	        
-        }        
+//        if ( android.os.Build.VERSION.SDK_INT >= 8 )
+//        {
+//	        GCMRegistrar.checkDevice(this);
+//	        GCMRegistrar.checkManifest(this);
+//
+//	        final String regId = GCMRegistrar.getRegistrationId(this);
+//	        if (regId.equals(""))
+//	        {
+//	        	// Automatically registers application on startup.
+//	        	GCMRegistrar.register(getApplicationContext(), SENDER_ID);
+//	        }
+//	        else
+//	        {
+//	        	// Device is already registered on GCM, check server.
+//	        	if (GCMRegistrar.isRegisteredOnServer(getApplicationContext()))
+//	        	{
+//	        		// Not sure what to do here :)
+//	        	}
+//	        	else
+//	        	{
+//			    	if ( user_id != null )
+//			    	{
+//				        GCMRegistrar.register(this, SENDER_ID); // google register
+//			    		//GCMRegistrar.setRegisteredOnServer(this, true); //Tell GCM: this device is registered on my server
+//				    	setRegistrationId ( user_id , regId );
+//			    	}
+//	        	}
+//	        }
+//        }
         
         
         
@@ -158,7 +164,7 @@ public class QuestionActivity extends BaseListActivity
     
     public void sendFeedback( String comment , String user_id , String recent_question_id ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/add_question_comment_mobile.php", 
+        String[] params = new String[] { "https://www.problemio.com/problems/add_question_comment_mobile.php",
         		comment , user_id , recent_question_id };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
@@ -167,7 +173,7 @@ public class QuestionActivity extends BaseListActivity
     
     public void sendFeedback( String user_id , String recent_question_id ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/get_question_comments_mobile.php", 
+        String[] params = new String[] { "https://www.problemio.com/problems/get_question_comments_mobile.php",
         		user_id , recent_question_id };
 
         LoadQuestionCommentsTask task = new LoadQuestionCommentsTask();
@@ -177,7 +183,7 @@ public class QuestionActivity extends BaseListActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", 
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php",
         		subject, body };
 
         SendEmail task = new SendEmail();
@@ -186,7 +192,7 @@ public class QuestionActivity extends BaseListActivity
     
     public void setRegistrationId(String user_id , String regId ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/update_user_reg_mobile.php", user_id , regId };
+        String[] params = new String[] { "https://www.problemio.com/problems/update_user_reg_mobile.php", user_id , regId };
 
         UpdateRedId task = new UpdateRedId();
         task.execute(params);        
@@ -218,7 +224,7 @@ public class QuestionActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -247,29 +253,29 @@ public class QuestionActivity extends BaseListActivity
 			return response;
 		}
 
-		@Override
-		protected void onPostExecute(String result) 
-		{	        
-	        if ( result == null )
-	        {
-		        // Show the user a message that they did not enter the right login
-		        
-	        }
-	        else
-	        if ( result.equals("error_updating_user") )
-	        {
-	        	
-	        }
-	        else
-	        {		        
-		        // TODO:
-		        if ( android.os.Build.VERSION.SDK_INT >= 8 )
-		        {
-		        	GCMRegistrar.setRegisteredOnServer(getApplicationContext(), true);
-		        }
-
-		    }
-		}        
+//		@Override
+//		protected void onPostExecute(String result)
+//		{
+//	        if ( result == null )
+//	        {
+//		        // Show the user a message that they did not enter the right login
+//
+//	        }
+//	        else
+//	        if ( result.equals("error_updating_user") )
+//	        {
+//
+//	        }
+//	        else
+//	        {
+//		        // TODO:
+//		        if ( android.os.Build.VERSION.SDK_INT >= 8 )
+//		        {
+//		        	GCMRegistrar.setRegisteredOnServer(getApplicationContext(), true);
+//		        }
+//
+//		    }
+//		}
     }            
     
     
@@ -294,7 +300,7 @@ public class QuestionActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -445,7 +451,7 @@ public class QuestionActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -595,5 +601,25 @@ public class QuestionActivity extends BaseListActivity
 	public void onStop()
     {
        super.onStop();
-    }    
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

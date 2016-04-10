@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
@@ -30,6 +32,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 public class TopicActivity extends BaseListActivity
 {
@@ -290,7 +296,7 @@ public class TopicActivity extends BaseListActivity
     {  
 
         String[] params = new String[] 
-        		{ "http://www.problemio.com/problems/get_fundraising_discussion_comments.php", 
+        		{ "https://www.problemio.com/problems/get_fundraising_discussion_comments.php",
         		problem_id , recent_topic_id };
         
 
@@ -302,7 +308,7 @@ public class TopicActivity extends BaseListActivity
     		String recent_topic_id )
     {  
         String[] params = new String[] 
-        		{ "http://www.problemio.com/problems/add_fundraising_comment.php", 
+        		{ "https://www.problemio.com/problems/add_fundraising_comment.php",
         		 c , user_id, problem_id , recent_topic_id };
 
         AddComment task = new AddComment();
@@ -349,7 +355,7 @@ public class TopicActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -525,7 +531,7 @@ public class TopicActivity extends BaseListActivity
 		        
 		        final URL url = new URL( myUrl + "?" + query );
 		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -702,9 +708,29 @@ public class TopicActivity extends BaseListActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
-    }         
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import utils.SendEmail;
 import android.app.AlertDialog;
@@ -19,6 +21,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 public class InviteFriendsActivity extends BaseActivity
@@ -250,7 +256,7 @@ public class InviteFriendsActivity extends BaseActivity
     public void getInviteCode(String problem_id) 
     {
         String[] params = new String[] { 
-        		"http://www.problemio.com/problems/get_invite_code_fundraising.php", 
+        		"https://www.problemio.com/problems/get_invite_code_fundraising.php",
         		problem_id };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
@@ -261,7 +267,7 @@ public class InviteFriendsActivity extends BaseActivity
     		String problem_id , String promo_code ) 
     {
     		String[] params = new String[] 
-        		{ "http://www.problemio.com/problems/invite_friends_fundraising.php" , friend_name , 
+        		{ "https://www.problemio.com/problems/invite_friends_fundraising.php" , friend_name ,
     				your_name , to_email, problem_id , promo_code};
     		
     		InviteFriendsTask task = new InviteFriendsTask();
@@ -288,7 +294,7 @@ public class InviteFriendsActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -387,7 +393,7 @@ public class InviteFriendsActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -438,9 +444,29 @@ public class InviteFriendsActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
-    }  
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

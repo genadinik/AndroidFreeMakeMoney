@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
@@ -30,6 +32,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 public class EnterInviteCodeActivity extends BaseListActivity
 {
@@ -147,7 +153,7 @@ public class EnterInviteCodeActivity extends BaseListActivity
     public void getInvitedBusinesses(String user_id) 
     {
         String[] params = new String[] { 
-        		"http://www.problemio.com/problems/get_users_fundraising_invites.php", 
+        		"https://www.problemio.com/problems/get_users_fundraising_invites.php",
         		user_id };
 
         GetInvitedBusinesses task = new GetInvitedBusinesses();
@@ -157,7 +163,7 @@ public class EnterInviteCodeActivity extends BaseListActivity
     public void matchInviteCode(String invite_code_input , String user_id) 
     {   
 	        String[] params = new String[] 
-	        		{ "http://www.problemio.com/problems/enter_invite_code_fundraising.php", 
+	        		{ "https://www.problemio.com/problems/enter_invite_code_fundraising.php",
 	        		invite_code_input , user_id};
 	             
 	        DownloadWebPageTask task = new DownloadWebPageTask();
@@ -185,7 +191,7 @@ public class EnterInviteCodeActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -291,7 +297,7 @@ public class EnterInviteCodeActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -401,7 +407,7 @@ public class EnterInviteCodeActivity extends BaseListActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -412,5 +418,25 @@ public class EnterInviteCodeActivity extends BaseListActivity
     {
        super.onStop();
        // your code
-    }     
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

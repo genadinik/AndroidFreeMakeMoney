@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,6 +33,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 public class AddPlanActivity extends BaseActivity
@@ -101,8 +107,6 @@ public class AddPlanActivity extends BaseActivity
 //        	//help_instructions.setVisibility(View.GONE);
 //        }
 
-        //sendEmail ( "Help: " + helping , "String countryISOCode: " + countryISOCode + " and user_id: " + numeric_user_id );
-           
 //	    email_ask = (TextView) findViewById(R.id.email_ask);
 //	    email = (EditText) findViewById(R.id.email);
 //	    name_ask = (TextView) findViewById(R.id.name_ask);
@@ -195,8 +199,6 @@ public class AddPlanActivity extends BaseActivity
 //    	{  
 //    	   public void onClick(View v) 
 //    	   {
-//           	  sendEmail ("Get help info clicked" , "User: " + user_id + " is reading about how to get help.");
-//    		   
 //    		   builder.setMessage("Within 12 hours (often much less) of completing this form, another entrepreneur will interact with you within the app, and help you plan various parts of your business right on the app.  You will be alerted about this via email. \n\nWhat to expect: Do not expect a full completed business plan document. DO expect help planning, feedback, and to have your overall plan and strategy improved.")
 //	              .setCancelable(false)
 //	              .setPositiveButton("Ok", new DialogInterface.OnClickListener() 
@@ -288,8 +290,6 @@ public class AddPlanActivity extends BaseActivity
     	      else 	  
     	      if ( business_name == null || business_name.length() < 1 )
     	      {
-    	    	  //sendEmail ( "Add Biz Validation (Description null) Error" , "User: " + user_id + " With name: " + session_name );
-    	    	  
     		      Toast.makeText(getApplicationContext(), "The plan name field can not be empty. Please try again.", 
     		    		  Toast.LENGTH_LONG).show();	      		      
     	      }
@@ -303,15 +303,13 @@ public class AddPlanActivity extends BaseActivity
 //    	    	  else
 //    	          if ( person_email == null || !matchFound )
 //    	          {
-//        	    	  //sendEmail ( "Add Biz Validation (person email empty) Error" , "User: " + user_id + " With name: " + session_name + " with email: " + person_email );
-//    	    		  Toast.makeText(getApplicationContext(), "Please enter a valid email address.", Toast.LENGTH_LONG).show();	    	    		  
+//    	    		  Toast.makeText(getApplicationContext(), "Please enter a valid email address.", Toast.LENGTH_LONG).show();
 //    	          }
 //    	          else
 //    	          {    		 	     
 ////    		 	     String business = prefs.getString( "business" , null );
 //    		 	       
-////    	    	      sendEmail ( "TEST advice" , "plan: " + business_name + " email: " + person_email + " person_name :" + person_name );
-//  		 	     
+//
 //    			     sendFeedback( business_name.trim() , user_id , person_name , person_email , "0");    	        	  
 //    			  }    		      
 //    	      }    	      
@@ -333,7 +331,7 @@ public class AddPlanActivity extends BaseActivity
         if ( business_name != null && business_name.length() > 0 )
         {	
 	        String[] params = new String[] 
-	        		{ "http://www.problemio.com/problems/add_fundraising_plan.php?platform=android_fundraising&", 
+	        		{ "https://www.problemio.com/problems/add_fundraising_plan.php?platform=android_fundraising&",
 	        		business_name , user_id , person_name , person_email , privacy};
 	             
 	        DownloadWebPageTask task = new DownloadWebPageTask();
@@ -376,7 +374,7 @@ public class AddPlanActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -398,8 +396,6 @@ public class AddPlanActivity extends BaseActivity
 			} 
 			catch (Exception e) 
 			{
-					//.printStackTrace();
-					//sendEmail("Exception adding business" , "Exception: " + e.getMessage());
 					connectionError = true;
 					
 			}
@@ -435,7 +431,7 @@ public class AddPlanActivity extends BaseActivity
 	        	}
 	        	catch ( Exception e )
 	        	{
-//		        		sendEmail ( "Error creating user id " ,  e.toString() ) ;        		
+
 	        	}
 			}
 			
@@ -448,7 +444,6 @@ public class AddPlanActivity extends BaseActivity
 			else
 			if ( result.equals("email_in_diff_account"))
 			{
-	        	//sendEmail( "AddBiz Dup" , "NOOOT  OKKKK - error adding questions database: " + result );	
 	        	error_message = (TextView) findViewById(R.id.error_message);
 	        	error_message.setVisibility(View.VISIBLE);
 	        	
@@ -466,7 +461,6 @@ public class AddPlanActivity extends BaseActivity
 	        else
 	        if ( result.equals( "error_adding_problem" ) )
 	        {		        
-                //sendEmail("Add Problem Submitted Error", "From add-problem page, after submitted a business. " +
                 //		"There was a database error adding the problem" );
                 
   		        Toast.makeText(getApplicationContext(), "Error submitting the business.  We are aware of this problem and it will be fixed in the next update of the app.  We sincerely apologize.", 
@@ -513,8 +507,8 @@ public class AddPlanActivity extends BaseActivity
 		        }
 		        catch ( Exception e )
 		        {   
-		        	//sendEmail("6" , result + " and exception: " + e.getMessage());		        	
-		        }	        	
+
+		        }
 	        	
 	        	
 	        	
@@ -543,9 +537,29 @@ public class AddPlanActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
-    }   
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

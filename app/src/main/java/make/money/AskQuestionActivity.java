@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,6 +20,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 public class AskQuestionActivity extends BaseActivity
@@ -89,8 +95,6 @@ public class AskQuestionActivity extends BaseActivity
 			  {
 				  e = e.trim();
 			  }
-			  
-              //sendEmail("A Question Has Been Submitted", "A question is submitted and here it is: " + q );
 
     	      // Put the persons SHarepPrefs email in there.
     	      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences( 
@@ -126,9 +130,7 @@ public class AskQuestionActivity extends BaseActivity
 	    	
 			  if ( user_id == null )
 			  {
-				  // TODO: please enter user id.  
-    		      //sendEmail("Ask Question Err Validating USER ID. " , "Person tried to submit a question, but their user id was empty....very bad." );
-				  
+				  // TODO: please enter user id.
 			  }
 			  else
 			  if ( n == null || n.length() < 2 )
@@ -159,7 +161,7 @@ public class AskQuestionActivity extends BaseActivity
 
     public void sendFeedback( String question , String user_id , String email , String name ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/add_question_mobile.php?platform=android_fundraising", 
+        String[] params = new String[] { "https://www.problemio.com/problems/add_question_mobile.php?platform=android_fundraising",
         		question , user_id , email , name };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
@@ -199,7 +201,7 @@ public class AskQuestionActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "&" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -277,7 +279,7 @@ public class AskQuestionActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -289,5 +291,25 @@ public class AskQuestionActivity extends BaseActivity
     {
        super.onStop();
        // your code
-    }        
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

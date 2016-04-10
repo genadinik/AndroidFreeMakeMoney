@@ -6,6 +6,8 @@ import java.net.HttpURLConnection;
 import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -23,6 +25,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 
 public class LoginActivity extends BaseActivity
@@ -115,7 +121,7 @@ public class LoginActivity extends BaseActivity
     
     public void sendFeedback(String pass , String email) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/auth/mobile_login.php", email, pass };
+        String[] params = new String[] { "https://www.problemio.com/auth/mobile_login.php", email, pass };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
         task.execute(params);        
@@ -124,7 +130,7 @@ public class LoginActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -177,7 +183,7 @@ public class LoginActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -227,7 +233,7 @@ public class LoginActivity extends BaseActivity
 			
 	        if ( result != null && result.equals( "no_such_user") )
 	        {		        
-		        Toast.makeText(getApplicationContext(), "Your email and password do not match out records. Please try again or create and account.", Toast.LENGTH_LONG).show();	
+		        Toast.makeText(getApplicationContext(), "Your email and password do not match our records. Please try again or create and account.", Toast.LENGTH_LONG).show();
 		        
 		        //final TextView login_error = (TextView) findViewById(R.id.login_error);
 	        }
@@ -277,12 +283,32 @@ public class LoginActivity extends BaseActivity
 	public void readWebpage(View view) 
 	{
 		DownloadWebPageTask task = new DownloadWebPageTask();
-		task.execute(new String[] { "http://www.problemio.com/auth/mobile_login.php" });
+		task.execute(new String[] { "https://www.problemio.com/auth/mobile_login.php" });
 	}     	
 	
     @Override
 	public void onStop()
     {
        super.onStop();
-    }    	
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

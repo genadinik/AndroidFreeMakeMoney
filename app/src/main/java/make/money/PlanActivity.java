@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
@@ -30,7 +32,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-import com.google.android.gcm.GCMRegistrar;
+//import com.google.android.gcm.GCMRegistrar;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import data.FundingTopic;
 
@@ -114,7 +120,7 @@ public class PlanActivity extends BaseListActivity
 //	      }
 //	      catch ( Exception e )
 //	      {
-//	          //sendEmail ("Problem Page Reg Exception" , e.getMessage() + "");	
+
 //	      }
 	        
 	        
@@ -367,7 +373,7 @@ public class PlanActivity extends BaseListActivity
     
     public void setRegistrationId(String user_id , String regId ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/update_user_reg_mobile.php", user_id , regId };
+        String[] params = new String[] { "https://www.problemio.com/problems/update_user_reg_mobile.php", user_id , regId };
 
         UpdateRedId task = new UpdateRedId();
         task.execute(params);        
@@ -377,7 +383,7 @@ public class PlanActivity extends BaseListActivity
     
     public void sendFeedback(String problem_id) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/get_fundraising_plan.php", problem_id };
+        String[] params = new String[] { "https://www.problemio.com/problems/get_fundraising_plan.php", problem_id };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
         task.execute(params);        
@@ -388,7 +394,7 @@ public class PlanActivity extends BaseListActivity
     	if ( dummyParam != null)
     	{
     		String[] params = new String[] 
-          		{ "http://www.problemio.com/problems/generate_doc.php" , problem_id};
+          		{ "https://www.problemio.com/problems/generate_doc.php" , problem_id};
     		
 //    		GenerateTextDocTask task = new GenerateTextDocTask();
 //            task.execute(params);
@@ -396,7 +402,7 @@ public class PlanActivity extends BaseListActivity
     	else
     	{
     		String[] params = new String[] 
-        		{ "http://www.problemio.com/problems/get_fundraising_plan_topics.php" , problem_id};
+        		{ "https://www.problemio.com/problems/get_fundraising_plan_topics.php" , problem_id};
 
 	        GetSolutionTopicsTask task = new GetSolutionTopicsTask();
 	        task.execute(params);
@@ -434,7 +440,7 @@ public class PlanActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -531,7 +537,7 @@ public class PlanActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -660,7 +666,7 @@ public class PlanActivity extends BaseListActivity
 		        }
 		        catch ( Exception e )
 		        {
-			        Log.d( "MyProblemsActivity Exception: " , "some crap happened " + e.getMessage() );
+
 		        }
 		        
 		        num_of_asynch_calls = num_of_asynch_calls - 1;
@@ -728,7 +734,7 @@ public class PlanActivity extends BaseListActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -1158,9 +1164,29 @@ public class PlanActivity extends BaseListActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
-    }       
+    }
+
+	TrustManager tm = new X509TrustManager()  {
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+	};
+
+	public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		try {
+			chain[0].checkValidity();
+		} catch (Exception e) {
+			throw new CertificateException("Certificate not valid or trusted.");
+		}
+	}
 }

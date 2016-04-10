@@ -4,11 +4,13 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.google.android.gcm.GCMRegistrar;
+//import com.google.android.gcm.GCMRegistrar;
 
 import utils.SendEmail;
 import android.net.Uri;
@@ -22,6 +24,10 @@ import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 public class MainActivity extends BaseActivity 
 {
@@ -414,7 +420,7 @@ public class MainActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -482,7 +488,7 @@ public class MainActivity extends BaseActivity
  
     public void sendFeedback( String user_id ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/auth/update_last_login_mobile.php", 
+        String[] params = new String[] { "https://www.problemio.com/auth/update_last_login_mobile.php",
         		 user_id };
 
         DownloadWebPageTask task = new DownloadWebPageTask();
@@ -491,7 +497,7 @@ public class MainActivity extends BaseActivity
     
     public void sendFeedback( ) 
     {  
-        String[] params = new String[] { "http://www.problemio.com/problems/increment_downloads.php" };
+        String[] params = new String[] { "https://www.problemio.com/problems/increment_downloads.php" };
 
         DownloadsPageTask task = new DownloadsPageTask();
         task.execute(params);        
@@ -500,7 +506,7 @@ public class MainActivity extends BaseActivity
     public void logUserIn( String email ) 
     {  
         String[] params = new String[] 
-        		{ "http://www.problemio.com/auth/log_user_in_from_email_mobile.php" , email };
+        		{ "https://www.problemio.com/auth/log_user_in_from_email_mobile.php" , email };
 
         LogUserFromEmailTask task = new LogUserFromEmailTask();
         task.execute(params);        
@@ -528,7 +534,7 @@ public class MainActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -667,7 +673,7 @@ public class MainActivity extends BaseActivity
 
 		        final URL url = new URL( myUrl + "?" + query );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -774,7 +780,7 @@ public class MainActivity extends BaseActivity
 			{		     
 		        final URL url = new URL( myUrl );
 		        		        
-		        final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        final HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		        
 		        conn.setDoOutput(true); 
 		        conn.setRequestMethod("POST");
@@ -848,14 +854,25 @@ public class MainActivity extends BaseActivity
         		//sendEmail ( "Error creating new user" ,  "Here is the result: " + result_id) ;
 	        }
 		}    
-    }		          
-    
-    
+    }
 
-    
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.activity_main, menu);
-//        return true;
-//    }
+    TrustManager tm = new X509TrustManager()  {
+        public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+    };
+
+    public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        try {
+            chain[0].checkValidity();
+        } catch (Exception e) {
+            throw new CertificateException("Certificate not valid or trusted.");
+        }
+    }
 }

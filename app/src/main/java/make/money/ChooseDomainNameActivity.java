@@ -8,6 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
 
 public class ChooseDomainNameActivity extends BaseActivity
 {
@@ -63,9 +69,7 @@ public class ChooseDomainNameActivity extends BaseActivity
       godaddy.setOnClickListener(new Button.OnClickListener() 
       {  
           public void onClick(View v) 
-          {	            	
-               //sendEmail("Free Ideas -> GoDaddy Check domain", "" );   	
-        	
+          {
 	            Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
 	          		  Uri.parse("http://www.jdoqocy.com/click-7252177-10985823"));
 	            startActivity(browserIntent);
@@ -76,7 +80,7 @@ public class ChooseDomainNameActivity extends BaseActivity
     // Subject , body
     public void sendEmail( String subject , String body )
     {
-        String[] params = new String[] { "http://www.problemio.com/problems/send_email_mobile.php", subject, body };
+        String[] params = new String[] { "https://www.problemio.com/problems/send_email_mobile.php", subject, body };
 
         SendEmail task = new SendEmail();
         task.execute(params);            	
@@ -92,5 +96,25 @@ public class ChooseDomainNameActivity extends BaseActivity
     protected void onStop()
     {
     	super.onStop();		
-    }    
+    }
+
+    TrustManager tm = new X509TrustManager()  {
+        public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+    };
+
+    public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        try {
+            chain[0].checkValidity();
+        } catch (Exception e) {
+            throw new CertificateException("Certificate not valid or trusted.");
+        }
+    }
 }

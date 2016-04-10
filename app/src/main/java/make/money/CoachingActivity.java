@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.flurry.android.FlurryAgent;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import utils.SendEmail;
 
@@ -55,4 +59,24 @@ public class CoachingActivity extends BaseActivity
     }
 });
 }
+
+    TrustManager tm = new X509TrustManager()  {
+        public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        }
+
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+    };
+
+    public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+        try {
+            chain[0].checkValidity();
+        } catch (Exception e) {
+            throw new CertificateException("Certificate not valid or trusted.");
+        }
+    }
 }
